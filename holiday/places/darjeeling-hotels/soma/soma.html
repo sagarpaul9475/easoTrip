@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treebo The Alpine Heritage Residency</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .hotel-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .hotel-title {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .hotel-location {
+            color: black;
+            font-size: 14px;
+        }
+        .rating-icons {
+            display: flex;
+            align-items: center;
+        }
+        .rating-icons span {
+            font-size: 20px;
+            color: gold;
+            margin-right: 5px;
+        }
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+            margin-top: 20px;
+        }
+        .image-gallery img {
+    width: 100%;
+    height: 200px; /* Set a fixed height */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+        .description-section {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f0f0f0;
+            border-radius: 8px;
+            line-height: 1.6;
+        }
+        .booking-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border-radius: 8px;
+        }
+        .booking-details {
+            display: flex;
+            flex-direction: column;
+        }
+        .booking-details span {
+            font-size: 16px;
+            margin-bottom: 10px;
+            box-sizing: content-box;
+            color: #005f9e;
+        }
+        .booking-details input {
+            padding: 5px;
+            font-size: 14px;
+            width: 60px;
+            margin-right: 10px;
+        }
+        .book-button {
+            padding: 10px 20px;
+            background-color: #c2000000;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .book-button:hover {
+            border: #005f9e;
+            background-color: #005f9e;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hotel-header">
+            <div>
+                <div class="hotel-title">The Soma Hotel By Avianna Group 
+                </div>
+                <div class="hotel-location">15, 12, N. C. Goenka Road, 734101 Darjeeling, India - <span>Good location - show map</span></div>
+            </div>
+            <div class="rating-icons">
+                <span>⭐</span><span>⭐</span><span>⭐</span>
+            </div>
+        </div>
+        <div class="image-gallery">
+            <img src="so1.jpg" alt="Hotel exterior">
+            <img src="so2.jpg" alt="Room view">
+            <img src="so3.jpg" alt="Dining area">
+            <img src="so4.jpg" alt="Lobby">
+            <img src="so5.jpg" alt="Garden seating">
+            <img src="so6.jpg" alt="Balcony view">
+        </div>
+
+        <!-- Description Section -->
+        <div class="description-section">
+            <p>Featuring 3-star accommodation, The Soma Hotel By Avianna Group is located in Darjeeling, 700 metres from Himalayan Mountaineering Institute And Zoological Park and 1.8 km from Happy Valley Tea Estate. Among the facilities of this property are a restaurant, room service and a 24-hour front desk, along with free WiFi throughout the property. The property is non-smoking and is situated 12 km from Tiger Hill.</p>
+            <p>
+                The daily breakfast offers buffet, à la carte or continental options.</p>
+            <p>Mahakal Mandir is 2.6 km from the hotel, while Japanese Peace Pagoda is 3 km from the property. The nearest airport is Bagdogra International Airport, 68 km from The Soma Hotel By Avianna Group.</p>
+            <!-- <p>Tibetan Buddhist Monastery Darjeeling is 2 km from Batasia, Hillside Inn, while Himalayan Mountaineering Institute And Zoological Park is 5 km from the property. The nearest airport is Bagdogra International Airport, 62 km from the hotel.</p> -->
+            <!-- <p>The Ridge, Shimla is 5.1 km from Treebo The Alpine Heritage Residency, while Jakhoo Gondola is 5.3 km from the property. The nearest airport is Simla Airport, 23 km from the hotel.</p> -->
+        </div>
+
+        <div class="booking-section">
+            <div class="booking-details">
+                <span>Cost per Night: <strong>Rs2199
+                    
+                </strong></span>
+                <span>Number of Days to Stay:</span>
+                <input type="number" min="1" value="1">
+            </div>
+            <button class="book-button"><a href="#">Book Now</a></button>
+        </div>
+    </div>
+</body>
+</html>

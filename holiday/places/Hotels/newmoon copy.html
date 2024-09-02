@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Newmoon</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .hotel-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .hotel-title {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .hotel-location {
+            color: #0071c200;
+            font-size: 14px;
+        }
+        .rating-icons {
+            display: flex;
+            align-items: center;
+        }
+        .rating-icons span {
+            font-size: 20px;
+            color: gold;
+            margin-right: 5px;
+        }
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+            margin-top: 20px;
+        }
+        .image-gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .description-section {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f0f0f0;
+            border-radius: 8px;
+            line-height: 1.6;
+        }
+        .booking-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border-radius: 8px;
+        }
+        .booking-details {
+            display: flex;
+            flex-direction: column;
+           
+        }
+        .booking-details span {
+            font-size: 16px;
+            margin-bottom: 10px;
+            box-sizing: content-box;
+            color: blue;
+            
+        }
+        .booking-details input {
+            padding: 5px;
+            font-size: 14px;
+            width: 60px;
+            margin-right: 10px;
+        }
+        .book-button {
+            padding: 10px 20px;
+            background-color: rgb(40, 40, 247);
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .book-button a{
+            color: inherit;
+            text-decoration: none;
+        }
+        .book-button:hover {
+            border: #34a3ec;
+            background-color: #2e95da;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hotel-header">
+            <div>
+                <div class="hotel-title">Hotel Newmoon</div>
+                <div class="hotel-location">Bus Stop, Cart Road, Opposite Talland, Milsington Estate, Shimla, Himachal Pradesh, 171001 Shimla, India – <span>Good location - show map</span></div>
+            </div>
+            <div class="rating-icons">
+                <span>⭐</span><span>⭐</span><span>⭐</span>
+            </div>
+        </div>
+        <div class="image-gallery">
+            <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/501990922.jpg?k=800b895f7a361973387b7c664a88daff69497fa045e6989ac6899e7e78cdb22d&o=&hp=1" alt="Hotel exterior">
+            <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/501990895.jpg?k=199eaec617fbd3a1f5413ed0f05f3c865bb0e9cefe9f03e3aeadc0eae14f1305&o=&hp=1" alt="Room view">
+            <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/501990912.jpg?k=3300e4a2b1e9f8520e7afc6e3ecaa91e91ef522d169e7f31f0ffc591b62f7513&o=&hp=1" alt="Dining area">
+            <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/501990878.jpg?k=6c22c65ae4b1ab5ac9235890fb9ce7f0ba849b9aa80b4a01e8f8ff85e5e795bc&o=&hp=1" alt="Lobby">
+            <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/501990881.jpg?k=cbc72107534f1d16c6c874bb956ea87fa30fd06d088cb611420a84f90714939b&o=&hp=1" alt="garden view">
+            <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/501990917.jpg?k=9b841f78a43de099b3c2ea8ad99388f784b6af7977001322dd1729f087e17fc8&o=&hp=1" alt="Balcony view">
+        </div>
+
+        <!-- Description Section -->
+        <div class="description-section">
+          <p>
+            Well set in the centre of Manāli, FabHotel The Moon provides air-conditioned rooms with free WiFi, free private parking and room service. This 3-star hotel offers a 24-hour front desk. The property is non-smoking and is located 1.3 km from Hidimba Devi Temple.
+
+            All units at the hotel are equipped with a seating area and a flat-screen TV with cable channels. At FabHotel The Moon every room comes with a private bathroom with a shower.
+
+            The accommodation offers an à la carte or vegetarian breakfast.
+
+            Circuit House is 700 metres from FabHotel The Moon, while Tibetan Monastery is 700 metres away. The nearest airport is Kullu–Manali Airport, 50 km from the hotel.
+          </p>
+          
+        </div>
+
+        <div class="booking-section">
+            <div class="booking-details">
+                <span>Cost per Night: <strong>Rs1200</strong></span>
+                <span>Number of Days to Stay:</span>
+                <input type="number" min="1" value="1">
+            </div>
+            <button class="book-button"><a href="#" >Book Now</a></button>
+        </div>
+    </div>
+</body>
+</html>

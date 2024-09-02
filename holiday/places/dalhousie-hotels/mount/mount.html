@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dalhausie</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .hotel-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .hotel-title {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .hotel-location {
+            color:black;
+            font-size: 14px;
+        }
+        .rating-icons {
+            display: flex;
+            align-items: center;
+        }
+        .rating-icons span {
+            font-size: 20px;
+            color: gold;
+            margin-right: 5px;
+        }
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+            margin-top: 20px;
+        }
+        .image-gallery img {
+    width: 100%;
+    height: 200px; /* Set a fixed height */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+        .description-section {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f0f0f0;
+            border-radius: 8px;
+            line-height: 1.6;
+        }
+        .booking-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border-radius: 8px;
+        }
+        .booking-details {
+            display: flex;
+            flex-direction: column;
+        }
+        .booking-details span {
+            font-size: 16px;
+            margin-bottom: 10px;
+            box-sizing: content-box;
+            color: #005f9e;
+        }
+        .booking-details input {
+            padding: 5px;
+            font-size: 14px;
+            width: 60px;
+            margin-right: 10px;
+        }
+        .book-button {
+            padding: 10px 20px;
+            background-color: #c2000000;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .book-button:hover {
+            border: #005f9e;
+            background-color: #005f9e;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hotel-header">
+            <div>
+                <div class="hotel-title">HiLL Mount View Homestay  
+                </div>
+                <div class="hotel-location">Talai Road, 176306 Dalhousie, India –<span>Good location - show map</span></div>
+            </div>
+            <div class="rating-icons">
+                <span>⭐</span><span>⭐</span><span>⭐</span>
+            </div>
+        </div>
+        <div class="image-gallery">
+            <img src="m1.jpg" alt="Hotel exterior">
+            <img src="m2.jpg" alt="Room view">
+            <img src="m3.jpg" alt="Dining area">
+            <img src="m4.jpg" alt="Lobby">
+            <img src="m5.jpg" alt="Garden seating">
+            <img src="m6.jpg" alt="Balcony view">
+        </div>
+
+        <!-- Description Section -->
+        <div class="description-section">
+            <p>HiLL Mount View Homestay Dalhousie Talai features mountain views, free WiFi and free private parking, set in Dalhousie. Guests staying at this homestay have access to a patio. Featuring family rooms, this property also provides guests with an outdoor fireplace.
+                <br>
+                Fitted with a terrace, the units feature a flat-screen TV and a private bathroom with bath and slippers. A balcony with garden views is offered in all units. The units are equipped with heating facilities.
+                <br>
+                A minimarket is available at the homestay.
+                <br>
+                A baby safety gate is also available at the homestay, while guests can also relax in the garden.
+                <br>
+                The nearest airport is Pathankot Airport, 92 km from HiLL Mount View Homestay Dalhousie Talai.</p>
+            
+           
+           
+        </div>
+
+        <div class="booking-section">
+            <div class="booking-details">
+                <span>Cost per Night: <strong>Rs2700
+                    
+                </strong></span>
+                <span>Number of Days to Stay:</span>
+                <input type="number" min="1" value="1">
+            </div>
+            <button class="book-button"><a href="#">Book Now</a></button>
+        </div>
+    </div>
+</body>
+</html>

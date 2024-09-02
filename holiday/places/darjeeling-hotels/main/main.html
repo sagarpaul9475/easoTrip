@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darjeeling</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #f0f0f0, rgb(134, 188, 246));
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .main-content {
+            flex: 3;
+        }
+
+        h1 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333; /* Dark grey color for professional look */
+            text-align: center;
+            margin-top: 50px;
+            font-size: 36px;
+            letter-spacing: 1px; /* Adds slight spacing between letters */
+            text-transform: uppercase; /* Converts text to uppercase */
+            border-bottom: 2px solid #eaeaea; /* Adds a subtle underline effect */
+            padding-bottom: 10px;
+        }
+
+        .hotel-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .hotel-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .hotel-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .hotel-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .hotel-details {
+            padding: 15px;
+        }
+
+        .hotel-name {
+            font-size: 20px;
+            margin-bottom: 5px;
+            text-decoration: none;
+            color: #2c3e50;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .hotel-name:hover {
+            color: #3498db;
+        }
+
+        .hotel-info {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .hotel-info span {
+            margin-right: 10px;
+        }
+
+        .hotel-amenities {
+            font-size: 14px;
+            color: #8b008b;
+            margin-bottom: 10px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .hotel-rating {
+            font-size: 16px;
+            color: #f39c12;
+            margin-bottom: 10px;
+        }
+
+        .hotel-price {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="main-content"> 
+            <h1>Hotels in Darjeeling</h1>
+            <div class="hotel-grid">
+                <div class="hotel-card">
+                    <a href="../arcadia/arcadia.html"><img src="a1.jpg" alt="Hotel Image" class="hotel-image"></a>
+                    <div class="hotel-details">
+                        <a href="../arcadia/arcadia.html" class="hotel-name">Arcadia Heritage Resort</a>
+                        <div class="hotel-info">
+                            <span>1km from center</span>
+                        </div>
+                        <a href="#" class="hotel-amenities">Free Breakfast</a>
+                        <div class="hotel-rating">4.2 ⭐</div>
+                        <a href="#" class="hotel-price">Rs 4999/night</a>
+                    </div>
+                </div>
+                <div class="hotel-card">
+                    <a href="../batasia/bata.html"><img src="b1.jpg" alt="Hotel Image" class="hotel-image"></a>
+                    <div class="hotel-details">
+                        <a href="#" class="hotel-name">Batasia, Hillside Inn</a>
+                        <div class="hotel-info">
+                            <span>500m from center</span>
+                        </div>
+                        <a href="#" class="hotel-amenities">Outdoor Pool</a>
+                        <div class="hotel-rating">4.1 ⭐</div>
+                        <a href="#" class="hotel-price">Rs 1299/night</a>
+                    </div>
+                </div>
+                <div class="hotel-card">
+                    <a href="../bnb/bnb.html"><img src="bnb1.jpg" alt="Hotel Image" class="hotel-image"></a>
+                    <div class="hotel-details">
+                        <a href="../bnb/bnb.html" class="hotel-name">Darjeeling BnB</a>
+                        <div class="hotel-info">
+                            <span>200m from center</span>
+                        </div>
+                        <a href="#" class="hotel-amenities">Play Safari</a>
+                        <div class="hotel-rating">4.8 ⭐</div>
+                        <a href="#" class="hotel-price">Rs 1999/night</a>
+                    </div>
+                </div>
+                <div class="hotel-card">
+                    <a href="../gorkha/gorkha.html"><img src="g1.webp" alt="Hotel Image" class="hotel-image"></a>
+                    <div class="hotel-details">
+                        <a href="../gorkha/gorkha.html" class="hotel-name">Gorkha Heritage Home</a>
+                        <div class="hotel-info">
+                            <span>1 km from center</span>
+                        </div>
+                        <a href="#" class="hotel-amenities">Mountain View</a>
+                        <div class="hotel-rating">4.7 ⭐</div>
+                        <a href="#" class="hotel-price">Rs 2999/night</a>
+                    </div>
+                </div>
+                <div class="hotel-card">
+                    <a href="../Humro/humro.html"><img src="h6.jpg" alt="Hotel Image" class="hotel-image"></a>
+                    <div class="hotel-details">
+                        <a href="../Humro/humro.html" class="hotel-name">HOTEL HUMRO HIMALAYAN ORCHID</a>
+                        <div class="hotel-info">
+                            <span>0.8 km from center</span>
+                        </div>
+                        <a href="#" class="hotel-amenities">Since 1971</a>
+                        <div class="hotel-rating">4 ⭐</div>
+                        <a href="#" class="hotel-price">Rs 1999/night</a>
+                    </div>
+                </div>
+                <div class="hotel-card">
+                    <a href="../saina/saina.html"><img src="s4.jpg" alt="Hotel Image" class="hotel-image"></a>
+                    <div class="hotel-details">
+                        <a href="../saina/saina.html" class="hotel-name">Q SAINA MAPHAM</a>
+                        <div class="hotel-info">
+                            <span>250m from center</span>
+                        </div>
+                        <a href="#" class="hotel-amenities">Gaming Parlor</a>
+                        <div class="hotel-rating">3.8 ⭐</div>
+                        <a href="#" class="hotel-price">Rs 3100/night</a>
+                    </div>
+                </div>
+                <div class="hotel-card">
+                    <a href="../soma/soma.html"><img src="so6.jpg" alt="Hotel Image" class="hotel-image"></a>
+                    <div class="hotel-details">
+                        <a href="../soma/soma.html" class="hotel-name">The Soma Hotel By Avianna Group
+                        </a>
+                        <div class="hotel-info">
+                            <span>350m from center</span>
+                        </div>
+                        <a href="#" class="hotel-amenities">Pool table</a>
+                        <div class="hotel-rating">3.5 ⭐</div>
+                        <a href="#" class="hotel-price">Rs 2199/night</a>
+                    </div>
+                </div>
+                <div class="hotel-card">
+                    <a href="../staynest/stay.html"><img src="st3.jpg" alt="Hotel Image" class="hotel-image"></a>
+                    <div class="hotel-details">
+                        <a href="../staynest/stay.html" class="hotel-name">Staynest darjeeling near railway station</a>
+                        <div class="hotel-info">
+                            <span>150m from center</span>
+                        </div>
+                        <a href="#" class="hotel-amenities">Free Wi-Fi</a>
+                        <div class="hotel-rating">4.5 ⭐</div>
+                        <a href="#" class="hotel-price">Rs 3999/night</a>
+                    </div>
+                </div>
+                <div class="hotel-card">
+                    <a href="../swiss/swiss.html"><img src="sw1.jpg" alt="Hotel Image" class="hotel-image"></a>
+                    <div class="hotel-details">
+                        <a href="../swiss/swiss.html" class="hotel-name">Summit Swiss Heritage Resort & Spa</a>
+                        <div class="hotel-info">
+                            <span>1.4 km from center</span>
+                        </div>
+                        <a href="#" class="hotel-amenities">Free Parking</a>
+                        <div class="hotel-rating">3.9 ⭐</div>
+                        <a href="#" class="hotel-price">Rs 4799/night</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

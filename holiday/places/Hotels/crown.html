@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crown Himalaya</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .hotel-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .hotel-title {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .hotel-location {
+            color: #0071c200;
+            font-size: 14px;
+        }
+        .rating-icons {
+            display: flex;
+            align-items: center;
+        }
+        .rating-icons span {
+            font-size: 20px;
+            color: gold;
+            margin-right: 5px;
+        }
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+            margin-top: 20px;
+        }
+        .image-gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .description-section {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f0f0f0;
+            border-radius: 8px;
+            line-height: 1.6;
+        }
+        .booking-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border-radius: 8px;
+        }
+        .booking-details {
+            display: flex;
+            flex-direction: column;
+           
+        }
+        .booking-details span {
+            font-size: 16px;
+            margin-bottom: 10px;
+            box-sizing: content-box;
+            color: blue;
+            
+        }
+        .booking-details input {
+            padding: 5px;
+            font-size: 14px;
+            width: 60px;
+            margin-right: 10px;
+        }
+        .book-button {
+            padding: 10px 20px;
+            background-color: rgb(40, 40, 247);
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .book-button a{
+            color: inherit;
+            text-decoration: none;
+        }
+        .book-button:hover {
+            border: #34a3ec;
+            background-color: #2e95da;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hotel-header">
+            <div>
+                <div class="hotel-title">Crown Himalaya</div>
+                <div class="hotel-location">Bus Stop, Cart Road, Opposite Talland, Milsington Estate, Shimla, Himachal Pradesh, 171001 Shimla, India – <span>Good location - show map</span></div>
+            </div>
+            <div class="rating-icons">
+                <span>⭐</span><span>⭐</span><span>⭐</span>
+            </div>
+        </div>
+        <div class="image-gallery">
+            <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/328883815.jpg?k=d23503f7ee8f05462c8fc56c980a9d18ab88374128c73209fbcb5bbfc3579753&o=&hp=1" alt="Hotel exterior">
+            <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/487702085.jpg?k=25093a5aa0effab9d9a75badf8fbbe469ec08716c197b583639b0d53c352aa8e&o=&hp=1" alt="Room view">
+            <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/487699174.jpg?k=b6a716844ee5cfadf775788e7dd2793f6bbfd674087cac230226937c0f7fef9c&o=&hp=1" alt="Dining area">
+            <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/487706257.jpg?k=171ec99c9cb133dc0d80342d1dbf2558d19447b8f8df52b40bb1cc6dfb3f41b5&o=&hp=1" alt="Lobby">
+            <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/487699452.jpg?k=3adb7103ae14e96f1915fee2f9bbcef225f24ec011cc60444431495fca2d33d9&o=&hp=1" alt="garden view">
+            <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/487699443.jpg?k=9c1f7f285420c14b5170e4b3ec88c66efd6f7d43df27b5057bdb9f7459b712fa&o=&hp=1" alt="Balcony view">
+        </div>
+
+        <!-- Description Section -->
+        <div class="description-section">
+            <p>
+                Offering a restaurant that serves local and Indian specialities, Hotel Crown Himalayas is located 2 km from the Pokhara Airport. It operates a 24-hour front desk and provides free Wi-Fi access throughout the property.
+
+                Fitted with hardwood/parquet floors and a minibar, the air-conditioned rooms here will provide you with a satellite TV, seating area and a balcony. Featuring a shower, private bathrooms also come with a hairdryer and slippers.
+                
+                At Hotel Crown Himalayas you will find a concierge desk, garden and terrace. Other facilities offered include meeting facilities, a ticket service and a tour desk. Guests can pamper themselves at the massage parlour. The property offers free parking.
+                
+                The hotel is just 300 metres from Fewa Lake, 1.5 km from World Peace Pagoda and 3.7 km from International Mountain Museum. The famous Annapurna Circuit is 4.5 km away. The local Bus Station is 1.5 km away from the property.
+            </p>
+        </div>
+
+        <div class="booking-section">
+            <div class="booking-details">
+                <span>Cost per Night: <strong>Rs2300</strong></span>
+                <span>Number of Days to Stay:</span>
+                <input type="number" min="1" value="1">
+            </div>
+            <button class="book-button"><a href="#" >Book Now</a></button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treebo The Alpine Heritage Residency</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .hotel-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .hotel-title {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .hotel-location {
+            color:black;
+            font-size: 14px;
+        }
+        .rating-icons {
+            display: flex;
+            align-items: center;
+        }
+        .rating-icons span {
+            font-size: 20px;
+            color: gold;
+            margin-right: 5px;
+        }
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+            margin-top: 20px;
+        }
+        .image-gallery img {
+    width: 100%;
+    height: 200px; /* Set a fixed height */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+        .description-section {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f0f0f0;
+            border-radius: 8px;
+            line-height: 1.6;
+        }
+        .booking-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border-radius: 8px;
+        }
+        .booking-details {
+            display: flex;
+            flex-direction: column;
+        }
+        .booking-details span {
+            font-size: 16px;
+            margin-bottom: 10px;
+            box-sizing: content-box;
+            color: #005f9e;
+        }
+        .booking-details input {
+            padding: 5px;
+            font-size: 14px;
+            width: 60px;
+            margin-right: 10px;
+        }
+        .book-button {
+            padding: 10px 20px;
+            background-color: #c2000000;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .book-button:hover {
+            border: #005f9e;
+            background-color: #005f9e;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hotel-header">
+            <div>
+                <div class="hotel-title">Darjeeling BnB
+                </div>
+                <div class="hotel-location">Middle Kakjhora, Near Railway Station., 734101 Darjeeling, India –<span>Good location - show map</span></div>
+            </div>
+            <div class="rating-icons">
+                <span>⭐</span><span>⭐</span><span>⭐</span>
+            </div>
+        </div>
+        <div class="image-gallery">
+            <img src="b1.jpg" alt="Hotel exterior">
+            <img src="b2.jpg" alt="Room view">
+            <img src="b3.jpg" alt="Dining area">
+            <img src="b4.jpg" alt="Lobby">
+            <img src="b5.jpg" alt="Garden seating">
+            <img src="b6.jpg" alt="Balcony view">
+        </div>
+
+        <!-- Description Section -->
+        <div class="description-section">
+            <p>Featuring mountain views, Darjeeling BnB features accommodation with balcony, around 11 km from Tiger Hill. It is situated 2.1 km from Himalayan Mountaineering Institute And Zoological Park and provides a shared kitchen. Boasting family rooms, this property also provides guests with an outdoor fireplace.
+            </p>
+            <p>
+                At the homestay, each unit is equipped with a desk. With a private bathroom fitted with slippers, units at the homestay also boast free WiFi, while certain rooms come with a terrace. At the homestay, every unit is equipped with bed linen and towels.</p>
+            <p>The area is popular for cycling, and bike hire and car hire are available at the homestay. Guests can also relax in the garden or in the shared lounge area.</p>
+            <p>Japanese Peace Pagoda is 2.5 km from Darjeeling BnB, while Mahakal Mandir is 3.2 km from the property. The nearest airport is Bagdogra International Airport, 67 km from the accommodation.</p>
+            <p>Couples particularly like the location — they rated it 8.3 for a two-person trip.</p>
+        </div>
+
+        <div class="booking-section">
+            <div class="booking-details">
+                <span>Cost per Night: <strong>Rs1999
+                    
+                </strong></span>
+                <span>Number of Days to Stay:</span>
+                <input type="number" min="1" value="1">
+            </div>
+            <button class="book-button"><a href="#">Book Now</a></button>
+        </div>
+    </div>
+</body>
+</html>

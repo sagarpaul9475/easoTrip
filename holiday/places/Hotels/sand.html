@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Sand Dunes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .hotel-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .hotel-title {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .hotel-location {
+            color: #0071c200;
+            font-size: 14px;
+        }
+        .rating-icons {
+            display: flex;
+            align-items: center;
+        }
+        .rating-icons span {
+            font-size: 20px;
+            color: gold;
+            margin-right: 5px;
+        }
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+            margin-top: 20px;
+        }
+        .image-gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .description-section {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f0f0f0;
+            border-radius: 8px;
+            line-height: 1.6;
+        }
+        .booking-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border-radius: 8px;
+        }
+        .booking-details {
+            display: flex;
+            flex-direction: column;
+           
+        }
+        .booking-details span {
+            font-size: 16px;
+            margin-bottom: 10px;
+            box-sizing: content-box;
+            color: blue;
+            
+        }
+        .booking-details input {
+            padding: 5px;
+            font-size: 14px;
+            width: 60px;
+            margin-right: 10px;
+        }
+        .book-button {
+            padding: 10px 20px;
+            background-color: rgb(40, 40, 247);
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .book-button a{
+            color: inherit;
+            text-decoration: none;
+        }
+        .book-button:hover {
+            border: #34a3ec;
+            background-color: #2e95da;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hotel-header">
+            <div>
+                <div class="hotel-title">The Sand Dunes</div>
+                <div class="hotel-location">Bus Stop, Cart Road, Opposite Talland, Milsington Estate, Shimla, Himachal Pradesh, 171001 Shimla, India – <span>Good location - show map</span></div>
+            </div>
+            <div class="rating-icons">
+                <span>⭐</span><span>⭐</span><span>⭐</span>
+            </div>
+        </div>
+        <div class="image-gallery">
+            <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/429257551.jpg?k=0ae42f683a3a5eba3de8fb09d11bacc96e033fd049799795af1625cd67a77181&o=&hp=1" alt="Hotel exterior">
+            <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/429257843.jpg?k=cb95006791d57973313ad330241165e0c2d5914965ead3399803ed08c59c4451&o=&hp=1" alt="Room view">
+            <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/161506067.jpg?k=1ace1e9a48fd9c5786e0271e208f67b7ea77a0fe73673e9698be84c8d1c1f0b3&o=&hp=1" alt="Dining area">
+            <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/160395212.jpg?k=2c3523b7789ac61fe72e6e9a7b064bb7dfc6fe510a0ea78b0862bfeb09136430&o=&hp=1" alt="Lobby">
+            <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/248234535.jpg?k=22b9ece09a46b8cf572f826161c787c84176b3d1f7a5297b8ad51ba90756b54c&o=&hp=1" alt="garden view">
+            <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/160395186.jpg?k=ab42b4ffc0915d98703160cd1511093d2b3640c28c17aa9ae76a71d10a482b67&o=&hp=1" alt="Balcony view">
+        </div>
+
+        <!-- Description Section -->
+        <div class="description-section">
+            <p>
+                Guest rooms at the resort include air conditioning, a flat-screen TV with satellite channels, DVD player, and a private bathroom with a shower, free toiletries and a hairdryer. Every room has a kettle, while selected rooms come with a patio and others also offer mountain views. At Sand Dunes Resort Accommodation each room has bed linen and towels.
+
+                The accommodation offers 4-star accommodation with a hot tub and terrace.
+            </p>
+        </div>
+
+        <div class="booking-section">
+            <div class="booking-details">
+                <span>Cost per Night: <strong>Rs2800</strong></span>
+                <span>Number of Days to Stay:</span>
+                <input type="number" min="1" value="1">
+            </div>
+            <button class="book-button"><a href="#" >Book Now</a></button>
+        </div>
+    </div>
+</body>
+</html>

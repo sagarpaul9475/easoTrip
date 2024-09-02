@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Most Wanted Ladakh Package</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Moderustic:wght@300..800&display=swap" rel="stylesheet">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f4f6;
+}
+
+h1 {
+    font-family: "Orbitron", sans-serif;
+    font-size: 3em; /* Adjust size as needed */
+    color: #333; /* Change color if needed */
+    text-align: center; /* Center the text */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.header {
+    background-color: #fff;
+    padding: 20px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+.container {
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.itinerary {
+    width: 70%;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.itinerary h2 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.day-plan {
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.day-plan h3 {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.day-plan .flight-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.day-plan .flight-info img {
+    width: 30px;
+    height: auto;
+}
+
+.day-plan .flight-info div {
+    flex: 1;
+    margin-left: 10px;
+}
+
+.day-plan .flight-info .time {
+    text-align: right;
+}
+
+.day-plan .flight-info .time strong {
+    display: block;
+    font-size: 14px;
+    color: #007bff;
+}
+
+.day-plan .tour-info img {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.day-plan .tour-info {
+    display: flex;
+    align-items: center;
+}
+
+.day-plan .tour-info div {
+    flex: 1;
+}
+
+.price-container {
+    width: 28%;
+}
+
+.price {
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.price .current-price {
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+}
+
+.price .original-price {
+    font-size: 16px;
+    text-decoration: line-through;
+    color: #999;
+    margin-top: 5px;
+    display: block;
+}
+
+.price .discount {
+    font-size: 14px;
+    color: #d9534f;
+    margin-top: 5px;
+}
+
+.price .adjusted-price {
+    font-size: 20px;
+    color: #007bff;
+    margin-top: 10px;
+}
+
+.price button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.offers {
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.offers h2 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-family: "Moderustic", sans-serif;
+}
+
+.offers .coupon {
+    font-weight: bold;
+    font-family: "DM Sans", sans-serif;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.offers .coupon.selected {
+    font-weight: bold;
+    font-family: "DM Sans", sans-serif;
+    background-color: #343a40; /* Dark mode background color */
+    color: #fff; /* Dark mode text color */
+    border-color: #495057; /* Dark mode border color */
+}
+
+.offers .apply-coupon,
+.offers .remove-coupon {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.offers .remove-coupon {
+    background-color: #d9534f;
+}
+
+.offers .coupon.selected .apply-coupon {
+    background-color: #0056b3; /* Darker blue for selected state */
+}
+
+.offers .coupon.selected .remove-coupon {
+    background-color: #c82333; /* Darker red for selected state */
+}
+
+.attendees {
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.attendees label {
+    font-size: 14px;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.attendees select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f8f9fa;
+    color: #333;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    transition: background-color 0.3s ease;
+    margin-bottom: 15px;}
+
+.attendees select:hover {
+    background-color: #e2e6ea;
+}
+
+.additional-services {
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.additional-services h2 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-family: "Moderustic", sans-serif;
+}
+
+/* Service Option Container */
+/* Service Option Container */
+.service-option {
+    margin-bottom: 40px;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-option:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Images */
+.service-option img {
+    width: 80px; /* Ensure image is square */
+    height: 80px; /* Ensure image is square */
+    border-radius: 15px; /* Rounded corners */
+    object-fit: cover; /* Ensure the image covers the square without distortion */
+    margin-bottom: 15px;
+    border: 2px solid #007bff;
+    padding: 5px;
+    background-color: #f7f9fc;
+    transition: transform 0.3s ease;
+}
+
+.service-option img:hover {
+    transform: scale(1.1); /* Slightly enlarge the image on hover */
+}
+
+/* Dropdown Style */
+.service-option select {
+    width: 60%;
+    padding: 15px 25px;
+    border: 0;
+    border-radius: 30px;
+    font-size: 16px;
+    background: #007bff;
+    color: #ffffff;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    position: relative;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+    font-weight: bold;
+}
+
+.service-option select:hover {
+    background-color: #0056b3;
+}
+
+.service-option select:focus {
+    outline: none;
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.5);
+}
+
+.service-option select::after {
+    content: '\25BC';
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #ffffff;
+    transition: transform 0.3s ease;
+}
+
+.service-option select:hover::after {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+/* Description Styling */
+.service-description {
+    font-size: 15px;
+    color: #666;
+    margin-top: 12px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* Custom Button */
+.service-option button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.service-option button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.tour-gallery {
+    margin-top: 30px;
+}
+
+.tour-gallery h2 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-family: "Orbitron", sans-serif;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.image-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-grid img:hover {
+    transform: scale(1.05);
+}
+
+/* Container Styling */
+.more-information {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px 30px;
+    margin-top: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: "Moderustic", sans-serif;
+}
+
+/* Main Heading Styling */
+.more-information h2 {
+    font-size: 28px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-family: "Moderustic", sans-serif;
+    text-transform: uppercase;
+    border-bottom: 2px solid #ec5e23;
+    padding-bottom: 10px;
+}
+
+/* Subheadings Styling */
+.more-information h3 {
+    font-size: 20px;
+    color: #444;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    border-left: 4px solid #ec5e23;
+    padding-left: 15px;
+}
+
+/* Paragraph Styling */
+.more-information p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* List Styling */
+.more-information ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.more-information ul li {
+    font-size: 16px;
+    color: #555;
+    padding: 8px 0;
+    position: relative;
+    padding-left: 25px;
+}
+
+.more-information ul li:before {
+    content: '\2022';
+    color: #ec5e23;
+    font-weight: bold;
+    display: inline-block;
+    width: 20px;
+    margin-left: -20px;
+    font-size: 18px;
+}
+
+/* Strong Text Styling */
+.more-information ul li strong {
+    color: #333;
+}
+
+/* Link Styling */
+.more-information a {
+    color: #ec5e23;
+    text-decoration: none;
+    border-bottom: 1px dotted #ec5e23;
+    transition: color 0.3s, border-color 0.3s;
+}
+
+.more-information a:hover {
+    color: #d35400;
+    border-bottom: 1px solid #d35400;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .more-information {
+        padding: 15px 20px;
+    }
+
+    .more-information h2 {
+        font-size: 24px;
+    }
+
+    .more-information h3 {
+        font-size: 18px;
+    }
+
+    .more-information p,
+    .more-information ul li {
+        font-size: 15px;
+    }
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #4CAF50;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.hotel-btn{
+    display: block; width: 100%; max-width: 300px; margin: 15px auto; padding: 12px 0; font-size: 16px; font-weight: bold; color: #fff; background-color: #007bff; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s;
+}
+
+.hotel-btn:hover{
+    display: block; width: 100%; max-width: 300px; margin: 15px auto; padding: 12px 0; font-size: 16px; font-weight: bold; color: #ffffff; background-color: #003c7d; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s;
+}
+
+
+    </style>
+</head>
+
+<body>
+    <form method="POST" action="receipt.php">
+    <div class="header">
+        <h1>Most Wanted Darjelling Package</h1>
+    </div>
+
+    <div class="gallery">
+        <img src="https://images.pexels.com/photos/19149591/pexels-photo-19149591/free-photo-of-hawa-mahal-in-jaipur.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Image 1">
+        <img src="https://images.pexels.com/photos/16738838/pexels-photo-16738838/free-photo-of-view-of-the-monkey-temple-in-jaipur-india.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Image 2">
+        <img src="https://images.pexels.com/photos/14247658/pexels-photo-14247658.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Image 3">
+        
+    </div>
+
+    <div class="container">
+        <div class="itinerary">
+            <h2>7 DAY PLAN</h2>
+            <div class="day-plan">
+                <!-- Day 1 -->
+                <h3>Day 1 - Arrival in Jaipur</h3>
+                <div class="flight-info">
+                    <img src="plane.jpeg" alt="Flight">
+                    <div>
+                        <p>Flight from New Delhi to Jaipur <strong>1h 15m</strong></p>
+                        <p>6E-2051</p>
+                    </div>
+                    <div class="time">
+                        <strong>09:00 - 10:15</strong>
+                        <p>Cabin: 7 Kgs | Check-in: 15 Kgs</p>
+                        <div style="
+                            margin-top:5px;
+                            border: 2px solid #007bff;
+                            background-color: #007bff;
+                            border-radius: 7px;
+                            padding: 10px 20px;
+                            color: white;
+                            text-align: center;
+                            cursor: pointer;
+                            display: inline-block;
+                            font-size: 16px;
+                            font-weight: bold;
+                            text-decoration: none;
+                            font-size: 0.8rem;
+                        ">
+                            <a href="flight-loader.html" target="_blank" style="text-decoration: none; color:white;">
+                                Book Flight
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="tour-info">
+                    <img src="https://imgd.aeplcdn.com/664x374/n/cw/ec/115777/ertiga-exterior-right-front-three-quarter-5.jpeg?isig=0&q=80" alt="Car">
+                    <div>
+                        <p>Private Transfer from Jaipur Airport to Hotel: Sedan, SUV or similar</p>
+                        <p>Facilities: 4 seater | 2 Luggage Bags | First Aid</p>
+                    </div>
+                </div>
+            
+                <!-- Day 2 -->
+                <h3>Day 2 - Jaipur Sightseeing</h3>
+                <div class="tour-info">
+                    <img src="https://images.pexels.com/photos/356844/pexels-photo-356844.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Jaipur">
+                    <div>
+                        <p>Explore Amber Fort, Hawa Mahal, and City Palace.</p>
+                        <p>Private Transfer: Sedan, SUV or similar</p>
+                    </div>
+                </div>
+            
+                <!-- Day 3 -->
+                <h3>Day 3 - Visit to Jantar Mantar and Jal Mahal</h3>
+                <div class="tour-info">
+                    <img src="https://images.pexels.com/photos/9314222/pexels-photo-9314222.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Jantar Mantar">
+                    <div>
+                        <p>Visit the famous Jantar Mantar observatory and enjoy a view of the Jal Mahal.</p>
+                        <p>Private Transfer: Sedan, SUV or similar</p>
+                    </div>
+                </div>
+            
+                <!-- Day 4 -->
+                <h3>Day 4 - Excursion to Pushkar</h3>
+                <div class="tour-info">
+                    <img src="https://images.pexels.com/photos/5992831/pexels-photo-5992831.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Pushkar">
+                    <div>
+                        <p>Travel to Pushkar, explore the Brahma Temple and Pushkar Lake.</p>
+                        <p>Private Transfer: Sedan, SUV or similar</p>
+                    </div>
+                </div>
+            
+                <!-- Day 5 -->
+                <h3>Day 5 - Visit to Nahargarh Fort and Jaigarh Fort</h3>
+                <div class="tour-info">
+                    <img src="https://images.pexels.com/photos/1870765/pexels-photo-1870765.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Fort">
+                    <div>
+                        <p>Visit the majestic Nahargarh Fort and Jaigarh Fort.</p>
+                        <p>Private Transfer: Sedan, SUV or similar</p>
+                    </div>
+                </div>
+            
+                <!-- Day 6 -->
+                <h3>Day 6 - Jaipur to Ranthambore</h3>
+                <div class="tour-info">
+                    <img src="https://images.pexels.com/photos/16007592/pexels-photo-16007592/free-photo-of-temple-ruins-ranthambore-fort-ranthambore-national-park-rajasthan-india.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Ranthambore">
+                    <div>
+                        <p>Travel from Jaipur to Ranthambore. Enjoy a safari at Ranthambore National Park.</p>
+                        <p>Private Transfer: Sedan, SUV or similar</p>
+                    </div>
+                </div>
+            
+                <!-- Day 7 -->
+                <h3>Day 7 - Departure from Jaipur</h3>
+                <div class="tour-info">
+                    <img src="https://th.bing.com/th/id/OIP.AmtMyJW6cbmOj6J1cMNXdQHaEY?rs=1&pid=ImgDetMain" alt="tour">
+                    <div>
+                        <p>Private transfer to Jaipur Airport for your flight back to New Delhi.</p>
+                        <p>Facilities: 4 seater | 2 Luggage Bags | First Aid</p>
+                    </div>
+                </div>
+                
+                <div class="tour-gallery">
+                    <h2>Tour Highlights</h2>
+                    <div class="image-grid">
+                        <img src="https://images.pexels.com/photos/9739805/pexels-photo-9739805.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Highlight 1">
+                        <img src="https://images.pexels.com/photos/9902399/pexels-photo-9902399.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Highlight 2">
+                        <img src="https://images.pexels.com/photos/9089313/pexels-photo-9089313.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Highlight 3">
+                        <img src="https://images.pexels.com/photos/19149568/pexels-photo-19149568/free-photo-of-view-of-a-monument-in-gaitore-ki-chhatriyan-jaipur-india.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Highlight 4">
+                        <img src="https://images.pexels.com/photos/14675000/pexels-photo-14675000.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Highlight 5">
+                        <img src="https://images.pexels.com/photos/19842963/pexels-photo-19842963/free-photo-of-view-of-a-stepwell.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Highlight 6">
+                    </div>
+                </div>
+            
+                <div class="more-information">
+                    <h2>More Information</h2>
+                    <p>Our Jaipur package offers a royal journey through the "Pink City." Enjoy exploring the grand palaces, majestic forts, and vibrant bazaars of Jaipur.</p>
+                
+                    <h3>Trip Highlights</h3>
+                    <ul>
+                        <li>Witness the grandeur of Amber Fort and its scenic surroundings.</li>
+                        <li>Explore the architectural wonders of Hawa Mahal and City Palace.</li>
+                        <li>Enjoy a serene boat ride near the Jal Mahal.</li>
+                        <li>Discover the rich cultural heritage of Jaipur through its historic forts.</li>
+                        <li>Experience the wildlife at Ranthambore National Park.</li>
+                    </ul>
+                
+                    <h3>What to Bring</h3>
+                    <ul>
+                        <li><strong>Comfortable Clothing:</strong> Jaipur can be hot, especially during the day. Light and breathable clothing is recommended.</li>
+                        <li><strong>Sun Protection:</strong> Carry a hat, sunglasses, and sunscreen to protect yourself from the sun.</li>
+                        <li><strong>Personal Medication and First Aid Kit:</strong> Carry any necessary medication along with basic first aid supplies.</li>
+                        <li><strong>Camera:</strong> Jaipur's architecture and landscapes offer countless photo opportunities.</li>
+                        <li><strong>Travel Documents:</strong> Ensure you have your ID, flight tickets, and hotel booking details.</li>
+                    </ul>
+                
+                    <h3>Best Time to Visit</h3>
+                    <p>The best time to visit Jaipur is between October and March when the weather is cooler and more pleasant for sightseeing.</p>
+                
+                    <h3>Additional Tips</h3>
+                    <ul>
+                        <li><strong>Guided Tours:</strong> Consider hiring a local guide for a more enriching experience.</li>
+                        <li><strong>Shopping:</strong> Jaipur is famous for its handicrafts, textiles, and jewelry. Bargaining is common in the local markets.</li>
+                        <li><strong>Food:</strong> Don't miss out on the local Rajasthani cuisine, including dishes like Dal Baati Churma and Ghewar.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            
+
+        </div>
+
+        <div class="price-container">
+            <div class="price">
+                <p class="current-price">₹46,417/Adult</p>
+                <p class="original-price">₹68,499</p>
+                <p class="discount">28% OFF (Save ₹22,082)</p>
+                <p class="adjusted-price" id="adjusted-price">₹46,417</p>
+                <button type="submit">Generate Receipt</button>
+            </div>
+
+            <div class="attendees">
+                <label for="attendees">Select Number of Attendees:</label>
+                <select id="attendees" name="attendees">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+                <label for="children">Number of Children (0-7yrs):</label>
+        <select id="children" name="children">
+            <option value="" disabled selected>Select number</option>
+            <option value="0">0 (free)</option>
+            <option value="1">1 (free)</option>
+            <option value="2">2 (free)</option>
+            <option value="3">3 (free)</option>
+            <option value="4">4 (free)</option>
+            <option value="5">5 (free)</option>
+        </select>
+
+        <label for="pets">Do you have pets?</label>
+<label class="switch">
+  <input type="checkbox" id="pets-toggle" name="pets-toggle">
+  <span class="slider round"></span>
+</label>
+<span id="toggle-text">No</span>
+
+            </div>
+
+
+
+            
+
+            <div class="offers">
+                <h2>Coupons & Offers</h2>
+                <div class="coupon">
+                    <p>GRANDOFFER - ₹17,748</p>
+                    <input type="button" class="apply-coupon" data-discount="17748"  name="apply_coupon_grandoff">Apply</input>
+                    <input type="button" class="remove-coupon" data-discount="17748">Remove</input>
+                </div>
+                <div class="coupon">
+                    <p>WELCOMEMMT - ₹21,060</p>
+                    <input type=button class="apply-coupon" data-discount="21060"  name="apply_coupon_grandoff">Apply</input>
+                    <input type="button" class="remove-coupon" data-discount="21060">Remove</input>
+                </div>
+            </div>
+            <div class="additional-services">
+                <h2>Additional Services</h2>
+                
+                <div class="service-option">
+                    <img src="https://th.bing.com/th/id/OIP.prlxXHzuL14Br8sBmxr15gAAAA?w=271&h=300&rs=1&pid=ImgDetMain" alt="Wheelchair">
+                    <div>
+                        <label for="wheelchair-select">Wheelchair:</label>
+                        <select id="wheelchair-select" name="wheelchair">
+                            <option value="none">None</option>
+                            <option value="standard">Standard Wheelchair</option>
+                            <option value="electric">Electric Wheelchair</option>
+                        </select>
+                        <div class="service-description">Choose a wheelchair option to make your trip more comfortable.</div>
+                    </div>
+                </div>
+                
+
+                <div class="service-option">
+                    <img src="https://m.media-amazon.com/images/I/71cp4s8wxwL.SX679.jpg" alt="Stroller">
+                    <div>
+                        <label for="stroller-select">Stroller:</label>
+                        <select id="stroller-select" name="stroller">
+                            <option value="none">None</option>
+                            <option value="single">Single Stroller</option>
+                            <option value="double">Double Stroller</option>
+                        </select>
+                        <div class="service-description">Select a stroller if you're traveling with young children.</div>
+                    </div>
+                </div>
+
+                <div class="service-option">
+                    <img src="https://images.pexels.com/photos/27176643/pexels-photo-27176643/free-photo-of-a-woman-holding-a-baby-in-the-woods.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Babysitter">
+                    <div>
+                        <label for="babysitter-select">Babysitter:</label>
+                        <select id="babysitter-select" name="babysitter">
+                            <option value="none">None</option>
+                            <option value="halfday">Half-Day Babysitter</option>
+                            <option value="fullday">Full-Day Babysitter</option>
+                        </select>
+                        <div class="service-description">Get assistance with childcare during your trip.</div>
+                    </div>
+                </div>
+
+                <div class="service-option">
+                    <img src="https://play-lh.googleusercontent.com/s06AISm1RkzTuie5UJNczrhn22t0_5tjT9sUZIwondVe9tQ53YuK6W2WccbvB7mDzCU" alt="Translator">
+                    <div>
+                        <label for="translator-select">Translator:</label>
+                        <select id="translator-select" name="translator">
+                            <option value="none">None</option>
+                            <option value="english">English Translator</option>
+                            <option value="french">French Translator</option>
+                        </select>
+                        <div class="service-description">Ensure smooth communication with a translator.</div>
+                    </div>
+                </div>
+
+                <div class="service-option">
+                    <img src="https://images.pexels.com/photos/3351927/pexels-photo-3351927.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Personal Chef">
+                    <div>
+                        <label for="chef-select">Personal Chef:</label>
+                        <select id="chef-select" name="chef">
+                            <option value="none">None</option>
+                            <option value="local">Local Cuisine Chef</option>
+                            <option value="international">International Cuisine Chef</option>
+                        </select>
+                        <div class="service-description">Enjoy personalized meals with a dedicated chef.</div>
+                    </div>
+                </div>
+
+                <div class="service-option">
+                    <img src="https://images.pexels.com/photos/3922943/pexels-photo-3922943.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Tour Guide">
+                    <div>
+                        <label for="tourguide-select">Tour Guide:</label>
+                        <select id="tourguide-select" name="tourguide">
+                            <option value="none">None</option>
+                            <option value="halfday">Half-Day Tour Guide</option>
+                            <option value="fullday">Full-Day Tour Guide</option>
+                        </select>
+                        <div class="service-description">Enhance your experience with a knowledgeable tour guide.</div>
+                    </div>
+                </div>
+                <h2 style="font-size: 0.9rem;">*No taxes & charges apply.</h2>
+            
+            
+            
+            
+        </div>
+    </form>
+        <!-- New button section for "View Hotels" -->
+        <div class="view-hotels-section" style="text-align: center; padding: 20px; background-color: #f8f9fa; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+            <h2 style="font-size: 1.5rem; margin-bottom: 15px; color: #333;">Explore Our Hotels</h2>
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/19/58/50/2c/the-abduz.jpg?w=1200&h=-1&s=1" alt="Hotels Image" style="width: 100%; max-width: 300px; display: block; margin: 0 auto; border-radius: 8px;">
+            <div style="
+            margin-top:5px ;
+            border: 2px solid #007bff;
+            background-color: #007bff;
+            border-radius: 7px;
+            padding: 10px 20px;
+            color: white;
+            text-align: center;
+            cursor: pointer;
+            display: inline-block;
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: none;
+          ">
+                <a href="loader2.html" target="_blank" style="text-decoration: none; color:white;">
+                View Hotels
+                </a>
+                </div>
+        </div>
+        
+    </div>
+
+    <script>
+        // JavaScript to handle the price adjustment
+        document.addEventListener('DOMContentLoaded', function () {
+    const basePrice = 46417; // Base price for 1 person
+    const attendeeSelect = document.getElementById('attendees');
+    const adjustedPriceElement = document.getElementById('adjusted-price');
+    // const currentPriceElement = document.querySelector('.current-price');
+    const applyButtons = document.querySelectorAll('.apply-coupon');
+    const removeButtons = document.querySelectorAll('.remove-coupon');
+    const coupons = document.querySelectorAll('.coupon');
+    let selectedCoupon = null; // Track the currently selected coupon
+
+    function updatePrice() {
+        const numAttendees = parseInt(attendeeSelect.value);
+        let totalPrice = basePrice * numAttendees;
+
+        // Apply the selected coupon discount if any
+        if (selectedCoupon !== null) {
+            totalPrice -= selectedCoupon;
+        }
+
+        // Ensure price doesn't go below zero
+        totalPrice = Math.max(totalPrice, 0);
+
+        adjustedPriceElement.textContent = `₹${totalPrice.toLocaleString()}`;
+        currentPriceElement.textContent = `₹${totalPrice.toLocaleString()}`;
+    }
+
+    function toggleCouponSelection(button, action) {
+        const coupon = button.closest('.coupon');
+        const discountAmount = parseInt(button.getAttribute('data-discount'), 10);
+
+        // Remove the existing coupon selection if a new one is applied
+        if (action === 'apply') {
+            if (selectedCoupon !== null) {
+                // Deselect the previously selected coupon
+                document.querySelector('.coupon.selected')?.classList.remove('selected');
+            }
+
+            selectedCoupon = discountAmount;
+            coupon.classList.add('selected');
+        } else if (action === 'remove' && coupon.classList.contains('selected')) {
+            selectedCoupon = null;
+            coupon.classList.remove('selected');
+        }
+
+        updatePrice(); // Recalculate the price after applying or removing a coupon
+    }
+
+    attendeeSelect.addEventListener('change', function () {
+        updatePrice(); // Recalculate the price when the number of attendees changes
+    });
+
+    applyButtons.forEach(function (button) {
+        button.addEventListener('click', function () {
+            toggleCouponSelection(button, 'apply');
+        });
+    });
+
+    removeButtons.forEach(function (button) {
+        button.addEventListener('click', function () {
+            toggleCouponSelection(button, 'remove');
+        });
+    });
+
+    // Initialize the price calculation on page load
+    updatePrice();
+});
+
+document.getElementById('pets-toggle').addEventListener('change', function() {
+    let toggleText = document.getElementById('toggle-text');
+    if (this.checked) {
+        toggleText.textContent = 'Yes';
+    } else {
+        toggleText.textContent = 'No';
+    }
+});
+
+
+
+
+    </script>
+</body>
+
+</html>

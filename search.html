@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ladakh Tour Packages</title>
+    <link rel="stylesheet" href="search.css">
+</head>
+<body>
+      <!-- Search Input -->
+      <div class="search-container">
+        <input type="text" class="search-input" id="searchInput" placeholder="Search for a package..." onkeyup="searchPackages()" value="">
+        <button class="search-button" onclick="searchPackages()">Search</button>
+    </div>
+
+    <div class="container">
+        <div class="filters">
+            <h2>Duration (in Nights)</h2>
+            <input type="range" id="nightsRange" min="3" max="12" value="6" oninput="updateNightsValue()">
+            <div id="nightsValue" class="range-value">6 Nights</div> <!-- Displays the current value of the slider -->
+            
+            <h2>Flights</h2>
+            <label><input type="radio" name="flight" checked> With Flight</label>
+            <label><input type="radio" name="flight"> Without Flight</label>
+            
+            <h2>Budget (per person)</h2>
+            <input type="range" id="budgetRange" min="15000" max="110000" value="50000" oninput="updateBudgetValue()">
+            <div id="budgetValue" class="range-value">₹50,000</div> <!-- Displays the current value of the slider -->
+            
+            <h2>Hotel Category</h2>
+            <label><input type="checkbox"> 3 Star</label>
+            <label><input type="checkbox"> 4 Star</label>
+            <label><input type="checkbox"> 5 Star</label>
+            
+            <h2>Cities</h2>
+            <label><input type="checkbox"> Leh</label>
+            <label><input type="checkbox"> Nubra Valley</label>
+            <label><input type="checkbox"> Pangong</label>
+            
+            <h2>Themes</h2>
+            <label><input type="checkbox"> Culture</label>
+            <label><input type="checkbox"> Adventure</label>
+            <label><input type="checkbox"> Honeymoon</label>
+        </div>
+        
+        <div class="packages">
+            <div class="package" id="ladakh">
+                <img src="Ladakh.jpg" alt="Most Wanted Ladakh Package">
+                <div class="package-details">
+                    <h3>Most Wanted Ladakh Package</h3>
+                    <p>5N/6D • Leh, Nubra Valley, Pangong</p>
+                    <ul>
+                        <li>Round Trip Flights</li>
+                        <li>3 Star Hotel & 3 Star Cottage</li>
+                        <li>Airport Transfers</li>
+                        <li>6 Activities</li>
+                        <li>Selected Meals</li>
+                        <li>Inner Line Permit</li>
+                    </ul>
+                    <div class="price">
+                        <p>₹46,747/Person</p>
+                        <small>Total Price ₹93,494</small>
+                    </div>
+                </div>
+            </div>
+            <div class="package" onclick="manali()">
+                <img src="https://images.pexels.com/photos/7086906/pexels-photo-7086906.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Most Wanted Ladakh Package">
+                <div class="package-details">
+                    <h3>Luxurious Manali Package</h3>
+                    <p>5N/6D • Kullu Manali</p>
+                    <ul>
+                        <li>Round Trip Flights</li>
+                        <li>4 Star Hotel & 4 Star Cottage</li>
+                        <li>Airport Transfers</li>
+                        <li>5 Activities</li>
+                        <li>Selected Meals</li>
+                        <li>Inner Line Permit</li>
+                    </ul>
+                    <div class="price">
+                        <p>₹40,595/Person</p>
+                        <small>Total Price ₹101,259</small>
+                    </div>
+                </div>
+            </div>
+            <div class="package" id="shimla">
+                <img src="https://images.pexels.com/photos/27180236/pexels-photo-27180236/free-photo-of-blue-hue.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Exclusive Shimla Tour">
+                <div class="package-details">
+                    <h3>Exclusive Shimla Tour</h3>
+                    <p>5N/6D • Shimla</p>
+                    <ul>
+                        <li>Round Trip Flights</li>
+                        <li>5 Star Hotel & 5 Star Cottage</li>
+                        <li>Airport Transfers</li>
+                        <li>7 Activities</li>
+                        <li>Selected Meals</li>
+                        <li>Inner Line Permit</li>
+                    </ul>
+                    <div class="price">
+                        <p>₹52,949/Person</p>
+                        <small>Total Price ₹97,545</small>
+                    </div>
+                </div>
+            </div>
+            <div class="package" id="darjeeling">
+                <img src="https://images.pexels.com/photos/10440693/pexels-photo-10440693.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Most Wanted Darjeeling Package">
+                <div class="package-details">
+                    <h3>Cholo Darjeeling</h3>
+                    <p>5N/6D • Darjeeling, West Bengal</p>
+                    <ul>
+                        <li>Round Trip Flights</li>
+                        <li>3 Star Hotel & 3 Star Cottage</li>
+                        <li>Airport Transfers</li>
+                        <li>4 Activities</li>
+                        <li>Selected Meals</li>
+                        <li>Inner Line Permit</li>
+                    </ul>
+                    <div class="price">
+                        <p>₹37,245/Person</p>
+                        <small>Total Price ₹77,679</small>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="package">
+                <img src="places/Ladakh.jpg" alt="Most Wanted Ladakh Package">
+                <div class="package-details">
+                    <h3>Most Wanted Ladakh Package</h3>
+                    <p>5N/6D • Leh, Nubra Valley, Pangong</p>
+                    <ul>
+                        <li>Round Trip Flights</li>
+                        <li>3 Star Hotel & 3 Star Cottage</li>
+                        <li>Airport Transfers</li>
+                        <li>6 Activities</li>
+                        <li>Selected Meals</li>
+                        <li>Inner Line Permit</li>
+                    </ul>
+                    <div class="price">
+                        <p>₹46,747/Person</p>
+                        <small>Total Price ₹93,494</small>
+                    </div>
+                </div>
+            </div>
+            <div class="package">
+                <img src="places/Ladakh.jpg" alt="Most Wanted Ladakh Package">
+                <div class="package-details">
+                    <h3>Most Wanted Ladakh Package</h3>
+                    <p>5N/6D • Leh, Nubra Valley, Pangong</p>
+                    <ul>
+                        <li>Round Trip Flights</li>
+                        <li>3 Star Hotel & 3 Star Cottage</li>
+                        <li>Airport Transfers</li>
+                        <li>6 Activities</li>
+                        <li>Selected Meals</li>
+                        <li>Inner Line Permit</li>
+                    </ul>
+                    <div class="price">
+                        <p>₹46,747/Person</p>
+                        <small>Total Price ₹93,494</small>
+                    </div>
+                </div>
+            </div> -->
+            
+            <!-- Add more package divs similarly -->
+        </div>
+    </div>
+
+    <script src="search.js"></script>
+</body>
+</html>

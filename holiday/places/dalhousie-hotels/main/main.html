@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dalhousie</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #f0f0f0, rgb(134, 188, 246));
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .main-content {
+            flex: 3;
+        }
+
+        h1 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333; /* Dark grey color for professional look */
+            text-align: center;
+            margin-top: 50px;
+            font-size: 36px;
+            letter-spacing: 1px; /* Adds slight spacing between letters */
+            text-transform: uppercase; /* Converts text to uppercase */
+            border-bottom: 2px solid #eaeaea; /* Adds a subtle underline effect */
+            padding-bottom: 10px;
+        }
+
+        .hotel-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .hotel-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .hotel-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .hotel-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .hotel-details {
+            padding: 15px;
+        }
+
+        .hotel-name {
+            font-size: 20px;
+            margin-bottom: 5px;
+            text-decoration: none;
+            color: #2c3e50;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .hotel-name:hover {
+            color: #3498db;
+        }
+
+        .hotel-info {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .hotel-info span {
+            margin-right: 10px;
+        }
+
+        .hotel-amenities {
+            font-size: 14px;
+            color: #8b008b;
+            margin-bottom: 10px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .hotel-rating {
+            font-size: 16px;
+            color: #f39c12;
+            margin-bottom: 10px;
+        }
+
+        .hotel-price {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="main-content"> 
+            <h1><u><i>Hotels in Dalhousie</i></u></h1>
+            <div class="hotel-grid">
+                <div class="hotel-card">
+                    <a href="../whiteorchid/orchid.html"><img src="o1.jpg" alt="Hotel Image" class="hotel-image"></a>
+                    <div class="hotel-details">
+                        <a href="../whiteorchid/orchid.html" class="hotel-name">Hotel White Orchid Dalhausie</a>
+                        <div class="hotel-info">
+                            <span>1km from center</span>
+                        </div>
+                        <a href="#" class="hotel-amenities">Free Breakfast</a>
+                        <div class="hotel-rating">4.2 ⭐</div>
+                        <a href="#" class="hotel-price">Rs 1530/night</a>
+                    </div>
+                </div>
+                <div class="hotel-card">
+                    <a href="../snowvalley/valley.html"><img src="sv1.jpg" alt="Hotel Image" class="hotel-image"></a>
+                    <div class="hotel-details">
+                        <a href="../snowvalley/valley.html" class="hotel-name">Snow Valley Resorts </a>
+                        <div class="hotel-info">
+                            <span>500m from center</span>
+                        </div>
+                        <a href="#" class="hotel-amenities">Outdoor Pool</a>
+                        <div class="hotel-rating">4.1 ⭐</div>
+                        <a href="#" class="hotel-price">Rs 5000/night</a>
+                    </div>
+                </div>
+                <div class="hotel-card">
+                    <a href="../dalhotel/hotel.html"><img src="h1.jpg" alt="Hotel Image" class="hotel-image"></a>
+                    <div class="hotel-details">
+                        <a href="../dalhotel/hotel.html" class="hotel-name">Dalhousie Hotel & Resort</a>
+                        <div class="hotel-info">
+                            <span>200m from center</span>
+                        </div>
+                        <a href="#" class="hotel-amenities">Play Safari</a>
+                        <div class="hotel-rating">4.8 ⭐</div>
+                        <a href="#" class="hotel-price">Rs 4500/night</a>
+                    </div>
+                </div>
+                <div class="hotel-card">
+                    <a href="../sarovar/sarovar.html"><img src="sa1.jpg" alt="Hotel Image" class="hotel-image"></a>
+                    <div class="hotel-details">
+                        <a href="../sarovar/sarovar.html" class="hotel-name">Presidium Sarovar Premiere </a>
+                        <div class="hotel-info">
+                            <span>1 km from center</span>
+                        </div>
+                        <a href="#" class="hotel-amenities">Mountain View</a>
+                        <div class="hotel-rating">4.7 ⭐</div>
+                        <a href="#" class="hotel-price">Rs 3200/night</a>
+                    </div>
+                </div>
+                <div class="hotel-card">
+                    <a href="../fortune/fortune.html"><img src="f1.jpg" alt="Hotel Image" class="hotel-image"></a>
+                    <div class="hotel-details">
+                        <a href="../fortune/fortune.html" class="hotel-name">Fortune Park, Dalhousie</a>
+                        <div class="hotel-info">
+                            <span>0.8 km from center</span>
+                        </div>
+                        <a href="#" class="hotel-amenities">Since 1971</a>
+                        <div class="hotel-rating">4 ⭐</div>
+                        <a href="#" class="hotel-price">Rs 2999/night</a>
+                    </div>
+                </div>
+                <div class="hotel-card">
+                    <a href="../hildar/hil.html"><img src="hil1.jpg" alt="Hotel Image" class="hotel-image"></a>
+                    <div class="hotel-details">
+                        <a href="../hildar/hil.html" class="hotel-name">Hilldaar </a>
+                        <div class="hotel-info">
+                            <span>250m from center</span>
+                        </div>
+                        <a href="#" class="hotel-amenities">Gaming Parlor</a>
+                        <div class="hotel-rating">3.8 ⭐</div>
+                        <a href="#" class="hotel-price">Rs 2100/night</a>
+                    </div>
+                </div>
+                <div class="hotel-card">
+                    <a href="../mount/mount.html"><img src="m1.jpg" alt="Hotel Image" class="hotel-image"></a>
+                    <div class="hotel-details">
+                        <a href="../mount/mount.html" class="hotel-name">HiLL Mount View Homestay </a>
+                        <div class="hotel-info">
+                            <span>350m from center</span>
+                        </div>
+                        <a href="#" class="hotel-amenities">Pool table</a>
+                        <div class="hotel-rating">3.5 ⭐</div>
+                        <a href="#" class="hotel-price">Rs 2700/night</a>
+                    </div>
+                </div>
+                <div class="hotel-card">
+                    <a href="../carabean/c.html"><img src="c6.jpg" alt="Hotel Image" class="hotel-image"></a>
+                    <div class="hotel-details">
+                        <a href="../carabean/c.html" class="hotel-name">Carabean Villa</a>
+                        <div class="hotel-info">
+                            <span>150m from center</span>
+                        </div>
+                        <a href="#" class="hotel-amenities">Free Wi-Fi</a>
+                        <div class="hotel-rating">4.5 ⭐</div>
+                        <a href="#" class="hotel-price">Rs 4999/night</a>
+                    </div>
+                </div>
+                <div class="hotel-card">
+                    <a href="../Zostel/zostel.html"><img src="z1.jpg" alt="Hotel Image" class="hotel-image"></a>
+                    <div class="hotel-details">
+                        <a href="../Zostel/zostel.html" class="hotel-name">Zostel Banikhet</a>
+                        <div class="hotel-info">
+                            <span>1.4 km from center</span>
+                        </div>
+                        <a href="#" class="hotel-amenities">Free Parking</a>
+                        <div class="hotel-rating">3.9 ⭐</div>
+                        <a href="#" class="hotel-price">Rs 1500/night</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

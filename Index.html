@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <!-- Google Translate -->
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <!-- Your other meta tags, stylesheets, and scripts -->
+
+      </script>
+
+    <!-- Css Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+    
+    <!-- unicons -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+
+    <!-- favicon -->
+    <link rel="icon" href="./imgs/icons/Vector.png" />
+
+    <!-- script tag -->
+    <script defer src="script.js"></script>
+
+    <!-- ScrollReveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- swiper js -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <title>easoTrip</title>
+  </head>
+  <body>
+    <main class="main" id="home">
+      <!-- Header -->
+      <header class="header">
+        <div class="logo">
+          <h5 style="font-size: 3.0rem;">easoTrip</h5>
+        </div>
+
+        <!-- navbar -->
+        <nav class="navbar">
+          <ul class="navlists">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#restaurants">Hotels</a></li>
+            <!-- <li class="navlist"><a href="#restaurants">Restaurants</a></li> -->
+            <li><a href="./offers/offers-loader.html">Offers</a></li>
+            <li><a href="search-loader.html">Destinations</a></li>
+            <li id="auth-links"><a href="users/register-loader.html">Join Us</a></li>
+            <li id="auth-links2"><a href="users/login-loader.html">Login</a></li>
+          </ul>
+        </nav>
+
+        <!-- user || navigator -->
+        <div class="user-profile" id="user-profile">
+          <div class="profile-name">
+            <h2>
+              <span class="hello"> Hello, </span>
+              <span class="indiviual-name" id="indiviual-name"> Nirjhar Mishra</span>
+            </h2>
+          </div>
+
+          <div class="profile-container">
+            <div class="profile-pic" onclick="toggleLogout()">
+              <img src="./Imgs/ProfilePic/profile.jpg" alt="Profile" />
+            </div>
+            <nav class="navbar">
+              <ul class="navlist" id="logoutMenu">
+                <li onclick="log_out()" style="cursor: pointer;"><a>Log out</a></li>
+              </ul>
+            </nav>
+          </div>
+          
+      </header>
+      <script src="user.js"></script>
+
+      <!-- showcase-content -->
+      <div class="showcase-content">
+        <h1>Discover the most engaging places</h1>
+        <a href="search-loader.html" target="_blank" class="showcase-button">
+          <img src="./imgs/icons/globe.png" alt="" /> Book Now</a
+        >
+      </div>
+<br><br><br>
+<div class="search-bar-container">
+  <!-- <form class="search-bar" action="search.html" method="GET"> -->
+    <div class="search-item search-query">
+      <input type="text" id="placeName" name="query" placeholder="Search for destinations, hotels, etc." required>
+    </div>
+    <button onclick="searchPlace()" class="search-button">Search</button>
+  <!-- </form> -->
+</div>
+<script>
+  function searchPlace() {
+        var place = document.getElementById('placeName').value;
+        if (place) {
+            var formattedPlace = place.split(' ').join('+');
+            var url = "https://www.google.com/maps/search/" + formattedPlace;
+            window.open(url, "_blank");
+        } else {
+            alert("Please enter a place name.");
+        }
+    }
+
+</script>
+
+
+
+
+      
+
+    </main>
+   
+    <!-- popular Destinations -->
+    <section class="destinations" id="destinations">
+      <div class="container">
+        <!-- title -->
+        <h2 class="section-title">Popular Destinations</h2>
+        <!-- cards -->
+
+        <div class="swiper swiper1">
+          <div class="destinations-cards swiper-wrapper">
+            <!-- card 1 -->
+            <div class="destination-card swiper-slide">
+              <img
+                src="https://images.pexels.com/photos/27364471/pexels-photo-27364471/free-photo-of-a-mountain-range-with-snow-capped-peaks-and-trees.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt=""
+                width="203"
+                height="181" onclick="manali()"
+              />
+              <h5>Manali</h5>
+              <h6>Himachal Pradesh, India</h6>
+            </div>
+            <!-- card 2 -->
+            <div class="destination-card swiper-slide" onclick="shimla()">
+              <img
+                src="./Destinations/Shimla.jpg"
+                alt=""
+                width="203"
+                height="181"
+              />
+              <h5>Shimla</h5>
+              <h6>Himachal Pradesh, India</h6>
+            </div>
+            <!-- card 3 -->
+            <div class="destination-card swiper-slide" onclick="darjeeling()">
+              <img
+                src="./Destinations/Darjeeliing2.jpg"
+                alt=""
+                width="203"
+                height="181"
+              />
+              <h5>Darjeeling</h5>
+              <h6>West Bengal, India</h6>
+            </div>
+            <!-- card 4 -->
+            <div class="destination-card swiper-slide" onclick="lakshwadeep()">
+              <img
+                src="./Destinations/lakshwadeep.jpg"
+                alt=""
+                width="203"
+                height="181"
+              />
+              <h5>Lakshwadeep</h5>
+              <h6>Malabar Coast, India</h6>
+            </div>
+            <!-- card 5 -->
+            <div class="destination-card swiper-slide" onclick="jaipur()">
+              <img
+                src="./Destinations/Jaipur.jpg"
+                alt=""
+                width="203"
+                height="181"
+              />
+              <h5>Jaipur</h5>
+              <h6>Rajasthan, India</h6>
+            </div>
+            
+            <!-- card 6 -->
+            <div class="destination-card swiper-slide" onclick="ladakh()">
+              <img
+                src="./Destinations/Ladakh.jpg"
+                alt=""
+                width="203"
+                height="181"
+              />
+              <h5>Ladakh</h5>
+              <h6>Northern India, India</h6>
+            </div>
+
+            <!-- card 7 -->
+            <div class="destination-card swiper-slide">
+              <img
+                src="./Destinations/Goa2.jpg"
+                alt=""
+                width="203"
+                height="181"
+              />
+              <h5>Senja Island</h5>
+              <h6>Norway</h6>
+            </div>
+            
+            <!-- card 8 -->
+            <div class="destination-card swiper-slide">
+              <img
+                src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80"
+                alt=""
+                width="203"
+                height="181"
+              />
+              <h5>Eiffel Tower</h5>
+              <h6>Paris France</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hotels And Restaurants -->
+    <section class="hotel-restaurants" id="restaurants">
+      <div class="container">
+        <div class="title-container">
+          <h2 class="section-title"> Hotels And Restaurants</h2>
+          <!-- <div class="section-button hotel-button">view all <img src="./imgs/icons/bleft.png" alt=""></div> -->
+        </div>
+        <!-- cards -->
+        <div class="hotel-card">
+          
+          <!-- card 1 -->
+          <div class="hotel-cards">
+            <a href="holiday/places/darjeeling-hotel-loader.html"><img src="./Hotels/Rambagh_hotel.jpg" alt="" width="320" height="380"></a>
+            <h5>Golkonda Resort & Spa</h5>
+            <h6><img src="./imgs/icons/map-pin-line.png" alt=""> Darjeeling, West Bengal</h6>
+            <div class="ratings"> <img src="./imgs/icons/rating=5.png" alt=""></div>
+          </div>
+          <!-- card 2 -->
+          <div class="hotel-cards">
+            <a href="holiday/places/dalhousie-hotel-loader.html"><img src="./Hotels/Paharganj_Hotel_delhi.jpg" alt="" width="320" height="380"></a>
+            <h5>Hotel Himdhara, Dalhousie </h5>
+            <h6><img src="./imgs/icons/map-pin-line.png" alt=""> Dalhousie, India</h6>
+            <div class="ratings"> <img src="./imgs/icons/rating=4.png" alt=""></div>
+          </div>
+          <!-- card 3 -->
+          <div class="hotel-cards">
+            <a href="holiday/places/shimla-hotel-loader.html"><img src="https://images.unsplash.com/photo-1445019980597-93fa8acb246c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174&q=80" alt="" width="320" height="380"></a>
+            <h5>The Retreat Mashobra, Shimla</h5>
+            <h6><img src="./imgs/icons/map-pin-line.png" alt=""> Shimla, India</h6>
+            <div class="ratings"> <img src="./imgs/icons/rating=3.png" alt=""></div>
+          </div>
+          <!-- card 4 -->
+          <div class="hotel-cards">
+            <a href="holiday/places/manali-hotel-loader.html"><img src="./Hotels/Highland_park_hotel_manali.jpg" alt="" width="320" height="380">
+            </a>
+            <h5>Highland Park Hotel, Manali</h5>
+            <h6><img src="./imgs/icons/map-pin-line.png" alt=""> Manali, India</h6>
+            <div class="ratings"> <img src="./imgs/icons/rating=5.png" alt=""></div>
+          </div>
+          <!-- card 5 -->
+          <div class="hotel-cards off">
+            <img src="https://images.unsplash.com/photo-1549294413-26f195200c16?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1964&q=80" alt="" width="320" height="380">
+            <h5>Majestic Elegance</h5>
+            <h6><img src="./imgs/icons/map-pin-line.png" alt=""> Dominican Republic</h6>
+            <div class="ratings"> <img src="./imgs/icons/rating=4.png" alt=""></div>
+          </div>
+          <!-- card 6 -->
+          <div class="hotel-cards off">
+            <img src="https://images.unsplash.com/photo-1586495985096-787fb4a54ac0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80" alt="" width="320" height="380">
+            <h5>Dreams Watervilla</h5>
+            <h6><img src="./imgs/icons/map-pin-line.png" alt=""> Meeru Island, Maldives</h6>
+            <div class="ratings"> <img src="./imgs/icons/rating=5.png" alt=""></div>
+          </div>
+          <!-- card 7 -->
+          <div class="hotel-cards off">
+            <img src="https://images.unsplash.com/photo-1594741158704-5a784b8e59fb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="" width="320" height="380">
+            <h5> Waldorf Astoria </h5>
+            <h6><img src="./imgs/icons/map-pin-line.png" alt="">  Rome, Italy</h6>
+            <div class="ratings"> <img src="./imgs/icons/rating=3.png" alt=""></div>
+          </div>
+          <!-- card 8 -->
+          <div class="hotel-cards off">
+            <img src="https://images.unsplash.com/photo-1525596662741-e94ff9f26de1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="" width="320" height="380">
+            <h5>Gilli Air</h5>
+            <h6><img src="./imgs/icons/map-pin-line.png" alt=""> Indonesia</h6>
+            <div class="ratings"> <img src="./imgs/icons/rating=4.png" alt=""></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Tours/Travel -->
+    <section id="tours">
+      <div class="container">
+        <div class="title-container">
+          <h2 class="section-title"> Traveler's Review</h2>
+          <!-- <div class="section-button hotel-button">view all <img src="./imgs/icons/bleft.png" alt=""></div> -->
+        </div>
+        <div class="tours-cards">
+
+          <div class="tours-card">
+            <div class="tour-img">
+              <a href="#"><img src="./Travelers review/Review2.jpg" alt="" width="320" height="380">
+              </a>
+            </div>
+            <div class="tours-card-content">
+              <div class="tours-card-contents-text">
+                <h3>Alibagh Beach</h3>
+                <p>Alibagh Beach A coastal sanctuary inviting you to unwind. Immerse in the serene beauty of sun-kissed shores, soft sands, and tranquil waves. Experience blissful moments by the sea</p>
+              </div>
+              <div class="tours-card-content-icons">
+                <h6><img src="./imgs/icons/calendersml.png" alt=""> Today</h6>
+                <h6><img src="./imgs/icons/user.png" alt=""> Komal Jangle</h6>
+                <h6><img src="./imgs/icons/message.png" alt=""> 12</h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="tours-card">
+            <div class="tour-img">
+              <img src="./Travelers review/Review1.jpg" alt="" width="320" height="380">
+            </div>
+            <div class="tours-card-content">
+              <div class="tours-card-contents-text">
+                <h3>Manali cinematic photo walk</h3>
+                <p>Discover the beauty of Manali through a guided photo walk. Capture stunning moments amid nature's splendor. Flexible locations upon request, extra charges may apply.</p>
+              </div>
+              <div class="tours-card-content-icons">
+                <h6><img src="./imgs/icons/calendersml.png" alt=""> Today</h6>
+                <h6><img src="./imgs/icons/user.png" alt=""> Sakshi Patil </h6>
+                <h6><img src="./imgs/icons/message.png" alt="">10</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- activities -->
+    <section id="activities">
+      <div class="container">
+        <div class="title-container">
+          <h2 class="section-title"> Activities</h2>
+          <!-- <div class="section-button hotel-button">view all <img src="./imgs/icons/bleft.png" alt=""></div> -->
+        </div>
+
+        <!-- Activities Cards -->
+        <div class="activities-cards">
+          <div class="activities-card">
+            <img src="https://images.unsplash.com/photo-1513432800008-a900568fccfe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="" width="320" height="380">
+            <h4>Sailing</h4>
+          </div>
+          <div class="activities-card">
+            <img src="https://images.unsplash.com/photo-1489805549589-3c5ae55fe740?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="" width="320" height="380">
+            <h4>Climbing</h4>
+          </div>
+          <div class="activities-card">
+            <img src="https://images.unsplash.com/photo-1565992441121-4367c2967103?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80" alt="" width="320" height="380">
+            <h4>Skiing</h4>
+          </div>
+          <div class="activities-card">
+            <img src="https://images.unsplash.com/19/nomad.JPG?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1098&q=80" alt="" width="320" height="380">
+            <h4>Hiking</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- about -->
+    <section id="About">
+      <div class="about-content">
+        <h2>About US</h2>
+        <p>
+          Greetings! I'm <span class="name">Nirjhar Mishra,</span> a 2nd year BCA student at GLA University, Mathura. I am passionately exploring the world of technology and constantly seeking opportunities to learn and grow. This website is a part of my final-year project, reflecting my dedication and enthusiasm for leveraging technology. Join me on this exciting journey of discovery and innovation! 
+        </p>
+
+         <!-- <div class="section-button hotel-button">Read More <img src="./imgs/icons/bleft.png" alt=""></div> -->
+      </div>
+
+      <div class="about-img">
+        <img src="./Imgs/about img.png" alt="" width="556" height="488">
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-sections">
+          <div class="footer-section">
+            <h5 style="font-size: 1.5rem;">easoTrip</h5>
+            <p>In this my final year project, I aim to keep things simple and ensure your satisfaction by offering a range of choices to meet your needs <br><br> This Website is develop by<span class="name"> Nirjhar Mishra</span><br><br>All Rights for this Website is reserved under <br>Copyright Section</p>
+            <div class="footer-social-icons">
+              <img src="./imgs/icons/facebook.png" alt="">
+              <img src="./imgs/icons/twitter.png" alt="">
+              <img src="./imgs/icons/instagram.png" alt="">
+            </div>
+          </div>
+
+          <div class="footer-section">
+            <h3>About</h3>
+            <ul>
+              <li><a href="">About Us</a></li>
+              <li><a href="">Features</a></li>
+              <li><a href="">News</a></li>
+              <li><a href="">Menu</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Company</h3>
+            <ul>
+              <li><a href="">why easoTrip</a></li>
+              <li><a href="">Partner with us</a></li>
+              <li><a href="">FAQ</a></li>
+              <li><a href="">Blog</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Support</h3>
+            <ul>
+              <li><a href="">Account</a></li>
+              <li><a href="">Support Center</a></li>
+              <li><a href="">Feedback</a></li>
+              <li><a href="">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Connect with easoTrip<br></h3>
+            <form>
+              <div class="form-section">
+                <img src="./imgs/icons/messagefooter.png" alt="">
+                <label for="email">  Your Email
+                  <input type="email" id="email" name="email" placeholder="exp - abc@gmail.com ">
+                </label>
+              </div>
+              <button onclick="alert('Your details has been sent!')"><img src="./imgs/icons/arrowleft.png" alt=""></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+     
+    <div class="toggleOn"><i class="uil uil-align-center-alt"></i></div>
+    <div class="toggleClose"><i class="uil uil-multiply"></i></div>
+      <!-- Your existing header and main content -->
+      
+      
+      <!-- Your existing footer and other elements -->
+
+    <!-- Chatbot Integration -->
+    <script>
+      window.embeddedChatbotConfig = {
+          chatbotId: "L0P0l7R0aoHNDq_ItbD-p",
+          domain: "www.chatbase.co"
+      };
+  </script>
+  <script
+      src="https://www.chatbase.co/embed.min.js"
+      chatbotId="L0P0l7R0aoHNDq_ItbD-p"
+      domain="www.chatbase.co"
+      defer
+  ></script>
+  </body>
+</html>
+
+<!--easoTrip Tourrism Website-->

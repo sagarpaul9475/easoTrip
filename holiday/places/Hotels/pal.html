@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pal Hotel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .hotel-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .hotel-title {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .hotel-location {
+            color: #0071c200;
+            font-size: 14px;
+        }
+        .rating-icons {
+            display: flex;
+            align-items: center;
+        }
+        .rating-icons span {
+            font-size: 20px;
+            color: gold;
+            margin-right: 5px;
+        }
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+            margin-top: 20px;
+        }
+        .image-gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .description-section {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f0f0f0;
+            border-radius: 8px;
+            line-height: 1.6;
+        }
+        .booking-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border-radius: 8px;
+        }
+        .booking-details {
+            display: flex;
+            flex-direction: column;
+           
+        }
+        .booking-details span {
+            font-size: 16px;
+            margin-bottom: 10px;
+            box-sizing: content-box;
+            color: blue;
+            
+        }
+        .booking-details input {
+            padding: 5px;
+            font-size: 14px;
+            width: 60px;
+            margin-right: 10px;
+        }
+        .book-button {
+            padding: 10px 20px;
+            background-color: rgb(40, 40, 247);
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .book-button a{
+            color: inherit;
+            text-decoration: none;
+        }
+        .book-button:hover {
+            border: #34a3ec;
+            background-color: #2e95da;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hotel-header">
+            <div>
+                <div class="hotel-title">Pal Hotel</div>
+                <div class="hotel-location">Bus Stop, Cart Road, Opposite Talland, Milsington Estate, Shimla, Himachal Pradesh, 171001 Shimla, India – <span>Good location - show map</span></div>
+            </div>
+            <div class="rating-icons">
+                <span>⭐</span><span>⭐</span><span>⭐</span>
+            </div>
+        </div>
+        <div class="image-gallery">
+            <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/443459075.jpg?k=1f6d6e1cb95f9202b0ffd2511e23409f8e12b22407217dc2c903e23bef57178b&o=&hp=1" alt="Hotel exterior">
+            <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/394501189.jpg?k=eb7bbbdb252508f34004bd0a70f5441760e81ecf2218aa73c84c7e7e95e5d2ec&o=&hp=1" alt="Room view">
+            <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/443457561.jpg?k=243c88999fa0c05dca3e9fb401eba8ae2fb32e3e4ffb207f8bf9ef26efe0c5cd&o=&hp=1" alt="Dining area">
+            <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/394501161.jpg?k=75a62f17cadbd8cf321e87a57b01ff9010afe5c83d7b91d0834719e9a5a72441&o=&hp=1" alt="Lobby">
+            <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/394501150.jpg?k=fec37c642354a4994749f68ac64b80094f1e633831ed905f63beadfc62737d84&o=&hp=1" alt="garden view">
+            <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/394501046.jpg?k=fb48d98413608509e77ddb48eca5f809526a392982bfd5b83c452f6e8b0170ee&o=&hp=1" alt="Balcony view">
+        </div>
+
+        <!-- Description Section -->
+        <div class="description-section">
+            <p>
+                Located in Leh, 1.4 km from Shanti Stupa, Pal Hotel provides accommodation with a garden, free private parking, a terrace and a restaurant. This 4-star hotel offers room service and a 24-hour front desk. The accommodation features evening entertainment and luggage storage space.
+
+Breakfast is available daily, and includes buffet, continental and American options.
+
+Soma Gompa is 800 metres from the hotel, while Namgyal Tsemo Gompa is 2.5 km away. The nearest airport is Kushok Bakula Rimpochee Airport, 4 km from Pal Hotel.
+            </p>
+        </div>
+
+        <div class="booking-section">
+            <div class="booking-details">
+                <span>Cost per Night: <strong>Rs3500</strong></span>
+                <span>Number of Days to Stay:</span>
+                <input type="number" min="1" value="1">
+            </div>
+            <button class="book-button"><a href="#" >Book Now</a></button>
+        </div>
+    </div>
+</body>
+</html>

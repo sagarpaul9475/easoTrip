@@ -1,0 +1,328 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+/* header start */
+.hero {
+    position: relative;
+    height: 70vh; /* Full height */
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%);
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8; /* Adjust the opacity to make the quote more readable */
+}
+
+.quote-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    padding: 20px;
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+
+.quote {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.author {
+    font-size: 18px;
+}
+
+@media (max-width: 600px) {
+    .quote-overlay {
+        padding: 10px;
+        width:70%;
+        height: 15%;
+    }
+    .quote {
+        font-size: 18px;
+    }
+    .author {
+        font-size: 14px;
+    }
+}
+/* header end */
+
+/* special start */
+@keyframes Animate {
+    from {color: black;}
+    to {color: #6495ff;}
+  }
+.special{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.special h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    animation-name: Animate;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.special p {
+    margin-bottom: 10px;
+}
+.texts{
+    font-size: 18px;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.offers {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.offer {
+    position: relative;
+    overflow: hidden;
+}
+
+.offer img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.offer .content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: white;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+.offer:hover .content {
+    bottom: 30px;
+}
+
+.offer h3 {
+    color: white;
+    position: absolute;
+    bottom: 2px;
+    right: 35px;
+}
+
+.offer .button {
+    display: inline-block;
+    background-color: #0051ff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.offer .button:hover {
+    background-color: #ff4d00;
+}
+@media (max-width: 768px) {
+    .offers {
+        width: 100%;
+    }
+    h1{
+        font-size: 20px;
+    }
+}
+
+/* special end */
+
+/* booking css start */
+.booking {
+    margin-top: 70px;
+    background-color: #cbe4ff;
+    height: 40vh; /* changed to vh unit for responsive height */
+    padding: 20px; /* added padding for better layout */
+  }
+  
+  .booking .row {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap; /* added flex-wrap for responsive layout */
+  }
+  
+  .booking .text h3 {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 2.5%;
+    margin-left: 6%;
+  }
+
+  .booking .text h6{
+    text-align: center;
+  }
+  
+  .img-container {
+    margin-top: 2%;
+  }
+  .img-container img{
+    width: 100%;
+  }
+  
+  /* Media queries for responsive design */
+ 
+@media (max-width: 768px) {
+    .booking {
+      height: 110vh;
+    }
+    .booking .row {
+      flex-direction: column;/*  changed to column layout for smaller screens*/
+    }
+    .booking .text {
+      font-size: 28px;
+    }
+    .img-container {
+      margin-top: 10px;
+    }
+    .img-container img{
+        width: 90%;
+        margin-left: 4%;
+      }
+  }
+
+
+
+/* booking css end */
+
+/* packages start */
+* {
+    box-sizing: border-box;
+  }
+.card{
+    margin: 10px auto;
+    /* margin: 10px; */
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: white;
+    width:330px;
+
+   
+}
+.specialtext{
+    margin-top: 70px;
+    text-align: center;
+    font-size: 24px;;
+}
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+  }
+
+  .row {
+    margin: 0 -5px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.title {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    text-align: start;
+}
+.details {
+    font-size: 0.9rem;
+    margin-top: 5px;
+    text-align: start;
+}
+.rating {
+    display: flex;
+    margin-top: 5px;
+}
+
+.rating i {
+    color: #ffcc00;
+    font-size: 1.2rem;
+}
+.price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.price .original-price {
+    font-size: 0.9rem;
+    color: #999;
+    text-decoration: line-through;
+}
+
+.price .current-price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #007bff;
+}
+.button{
+    display: inline-block;
+    background-color: #0051ff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background-color: #ff4d00;
+}
+
+        
+        /* Responsive columns */
+        @media screen and (max-width: 600px) {
+          .column {
+            width: 100%;
+            display: block;
+            margin-bottom: 20px;
+          }
+        
+        
+        /* Style the counter cards */
+        .card {
+          /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          padding: 16px;
+          text-align: center;
+          background-color: white; */
+          width: 90%;
+        }
+        .specialtext{
+            margin-top: 70px;
+            text-align: center;
+            font-size: 17px;;
+        }
+    }

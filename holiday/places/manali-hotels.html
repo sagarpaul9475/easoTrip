@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manali</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #f0f0f0, rgb(134, 188, 246));
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .main-content {
+            flex: 3;
+        }
+
+        h1 {
+    font-family: 'Georgia', serif;
+    font-size: 3em;
+    color: #2c3e50; /* Dark shade for the text */
+    text-align: center;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+    letter-spacing: 2px; /* Adds some spacing between letters */
+    border-bottom: 3px solid #2980b9; /* Thin line beneath the heading */
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+
+        .hotel-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .hotel-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .hotel-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .hotel-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .hotel-details {
+            padding: 15px;
+        }
+
+        .hotel-name {
+            font-size: 20px;
+            margin-bottom: 5px;
+            text-decoration: none;
+            color: #2c3e50;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .hotel-name:hover {
+            color: #3498db;
+        }
+
+        .hotel-info {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .hotel-info span {
+            margin-right: 10px;
+        }
+
+        .hotel-amenities {
+            font-size: 14px;
+            color: #8b008b;
+            margin-bottom: 10px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .hotel-rating {
+            font-size: 16px;
+            color: #f39c12;
+            margin-bottom: 10px;
+        }
+
+        .hotel-price {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="main-content"> 
+            <h1>Hotels in Manali</h1>
+            <div class="hotel-grid">
+                <div class="hotel-card">
+                    <a href="Hotels\montana.html"><img src="https://cf.bstatic.com/xdata/images/hotel/square240/490260114.webp?k=fdc5ed307cc78149bea52fce8e3be5280fd6f489dfbb126ba98dd5c4c8d3da9a&o=" alt="Hotel Image" class="hotel-image"></a>
+                    <div class="hotel-details">
+                        <a href="montana.htm" class="hotel-name">Montana Blues Resort</a>
+                        <div class="hotel-info">
+                            <span>2.2km from center</span>
+                        </div>
+                        <a href="#" class="hotel-amenities">Free Breakfast</a>
+                        <div class="hotel-rating">4 ⭐</div>
+                        <a href="#" class="hotel-price">Rs 2600/night</a>
+                    </div>
+                </div>
+                <div class="hotel-card">
+                    <a href="Hotels\lord.html"><img src="https://cf.bstatic.com/xdata/images/hotel/square600/76849496.webp?k=af2c8614c2e7ea68f4d16c3fc046ea39561b80233955e9b7338e7d7fef76bc86&o=" alt="Hotel Image" class="hotel-image"></a>
+                    <div class="hotel-details">
+                        <a href="lord.htm" class="hotel-name">Hotel Lord Regency</a>
+                        <div class="hotel-info">
+                            <span>300m from center</span>
+                        </div>
+                        <a href="#" class="hotel-amenities">Play Safari</a>
+                        <div class="hotel-rating"> ⭐</div>
+                        <a href="#" class="hotel-price">Rs 2880/night</a>
+                    </div>
+                </div>
+                <div class="hotel-card">
+                    <a href="Hotels\regenta.html"><img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/351948474.jpg?k=930ac5a63bb172dd2fc8d14b857860f5819185dad6935bceafee3b4348ce83e7&o=&hp=1" alt="Hotel Image" class="hotel-image"></a>
+                    <div class="hotel-details">
+                        <a href="regenta.htm" class="hotel-name">Regenta Inn</a>
+                        <div class="hotel-info">
+                            <span>23.8 km from center</span>
+                        </div>
+                        <a href="#" class="hotel-amenities">Mountain View</a>
+                        <div class="hotel-rating">4.2 ⭐</div>
+                        <a href="#" class="hotel-price">Rs 4651/night</a>
+                    </div>
+                </div>
+                <div class="hotel-card">
+                    <a href="Hotels\orchard.html"><img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/164724950.jpg?k=d5b8bbb87bcc555ad36a5a3d28884c4af7fc18ba0aacc900114ececcbf3be916&o=&hp=1" alt="Hotel Image" class="hotel-image"></a>
+                    <div class="hotel-details">
+                        <a href="orchard.htm" class="hotel-name">Orchards House</a>
+                        <div class="hotel-info">
+                            <span>1.6 km from center</span>
+                        </div>
+                        <a href="#" class="hotel-amenities">Great Location</a>
+                        <div class="hotel-rating">3 ⭐</div>
+                        <a href="#" class="hotel-price">Rs 3500/night</a>
+                    </div>
+                </div>
+                <div class="hotel-card">
+                    <a href="Hotels\hollywood.html"><img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/580893805.jpg?k=f7c5f91645933a004fc6f98aa7b481ce5cb680c74b8a96f0ba0e463cce77959e&o=&hp=1" alt="Hotel Image" class="hotel-image"></a>
+                    <div class="hotel-details">
+                        <a href="hollywood.htm" class="hotel-name"> Hotel Hollywood</a>
+                        <div class="hotel-info">
+                            <span>1.8 from center</span>
+                        </div>
+                        <a href="#" class="hotel-amenities">Excellent Location</a>
+                        <div class="hotel-rating">4 ⭐</div>
+                        <a href="#" class="hotel-price">Rs 2800/night</a>
+                    </div>
+                </div>
+                <div class="hotel-card">
+                    <a href="Hotels\valley.html"><img src="https://cf.bstatic.com/xdata/images/hotel/square240/588227887.webp?k=f1da93296364cc642672f6ece6c7f3bbf6f0a6cee096911b8faee608af48bb73&o=" alt="Hotel Image" class="hotel-image"></a>
+                    <div class="hotel-details">
+                        <a href="valley.htm" class="hotel-name">Hotel Valley View</a>
+                        <div class="hotel-info">
+                            <span>2.6 from center</span>
+                        </div>
+                        <a href="#" class="hotel-amenities">Terrace Pool</a>
+                        <div class="hotel-rating">4.5 ⭐</div>
+                        <a href="#" class="hotel-price">Rs 3500/night</a>
+                    </div>
+                </div>
+                <div class="hotel-card">
+                    <a href="Hotels\newmoon.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQLNcHNoAeMES_HgBxKa4-NNyl7IKONvwwPw&s" alt="Hotel Image" class="hotel-image"></a>
+                    <div class="hotel-details">
+                        <a href="newmoon/new.htm" class="hotel-name">Hostel Newmoon</a>
+                        <div class="hotel-info">
+                            <span>150m from center</span>
+                        </div>
+                        <a href="#" class="hotel-amenities">Free Wi-Fi</a>
+                        <div class="hotel-rating">4.5 ⭐</div>
+                        <a href="#" class="hotel-price">Rs 1200/night</a>
+                    </div>
+                </div>
+                <div class="hotel-card">
+                    <a href="Hotels\hilltop.html"><img src="https://cf.bstatic.com/xdata/images/hotel/square240/444381644.webp?k=28130308007c8b6abce896bbf3c8782a2b6f637d4ebe5e48707343ab50d9467b&o=" alt="Hotel Image" class="hotel-image"></a>
+                    <div class="hotel-details">
+                        <a href="lawang/law.htm" class="hotel-name">Hotel hilltop</a>
+                        <div class="hotel-info">
+                            <span>0.6 km from center</span>
+                        </div>
+                        <a href="#" class="hotel-amenities">On Mall Road</a>
+                        <div class="hotel-rating">3.9 ⭐</div>
+                        <a href="#" class="hotel-price">Rs 1500/night</a>
+                    </div>
+                </div>
+                <div class="hotel-card">
+                    <a href="Hotels\wood.html"><img src="https://cf.bstatic.com/xdata/images/hotel/square240/524582479.webp?k=5480f9a81dcef139d05c65bc757ef16bee4bc3ff66287602cf4a51ac93c8c11d&o=" alt="Hotel Image" class="hotel-image"></a>
+                    <div class="hotel-details">
+                        <a href="woods.htm" class="hotel-name">The Woods Vills</a>
+                        <div class="hotel-info">
+                            <span>1.2 from center</span>
+                        </div>
+                        <a href="#" class="hotel-amenities">Free Wi-Fi</a>
+                        <div class="hotel-rating">4.5 ⭐</div>
+                        <a href="#" class="hotel-price">Rs 2800/night</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

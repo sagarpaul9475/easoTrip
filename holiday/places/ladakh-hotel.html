@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ladakh</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #f0f0f0, rgb(134, 188, 246));
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .main-content {
+            flex: 3;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #2c3e50;
+        }
+
+        .hotel-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .hotel-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .hotel-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .hotel-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .hotel-details {
+            padding: 15px;
+        }
+
+        .hotel-name {
+            font-size: 20px;
+            margin-bottom: 5px;
+            text-decoration: none;
+            color: #2c3e50;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .hotel-name:hover {
+            color: #3498db;
+        }
+
+        .hotel-info {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .hotel-info span {
+            margin-right: 10px;
+        }
+
+        .hotel-amenities {
+            font-size: 14px;
+            color: #8b008b;
+            margin-bottom: 10px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .hotel-rating {
+            font-size: 16px;
+            color: #f39c12;
+            margin-bottom: 10px;
+        }
+
+        .hotel-price {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="main-content"> 
+            <h1><u><i>Hotels in Ladakh</i></u></h1>
+            <div class="hotel-grid">
+                <div class="hotel-card">
+                    <a href="Hotels\snow.html"><img src="https://cf.bstatic.com/xdata/images/hotel/square200/536736930.webp?k=43202129e8efda969c15ecd024f1be8f97ec039bb98572e1a4f29fb4bd81bc0f&o=" alt="Hotel Image" class="hotel-image"></a>
+                    <div class="hotel-details">
+                        <a href="snow.htm" class="hotel-name">Snow Lion Ladakh</a>
+                        <div class="hotel-info">
+                            <span>2 km from center</span>
+                        </div>
+                        <a href="#" class="hotel-amenities">Accomodation with a Garden</a>
+                        <div class="hotel-rating">4 ⭐</div>
+                        <a href="#" class="hotel-price">Rs 1850/night</a>
+                    </div>
+                </div>
+                <div class="hotel-card">
+                    <a href="Hotels\crown.html"><img src="https://cf.bstatic.com/xdata/images/hotel/square200/481231030.webp?k=8fdd6e02c1b73d13b1659dd29b1b98b9c1aeee63fef2a9c3ff81e0a1c7d51572&o=" alt="Hotel Image" class="hotel-image"></a>
+                    <div class="hotel-details">
+                        <a href="crown.htm" class="hotel-name">Crown Himalaya</a>
+                        <div class="hotel-info">
+                            <span>2.5 km from center</span>
+                        </div>
+                        <a href="#" class="hotel-amenities">Accomodation with a Garden</a>
+                        <div class="hotel-rating"> ⭐</div>
+                        <a href="#" class="hotel-price">Rs 2300/night</a>
+                    </div>
+                </div>
+                <div class="hotel-card">
+                    <a href="Hotels\stone.html"><img src="https://cf.bstatic.com/xdata/images/hotel/square240/443448396.webp?k=5ed2afdc3410370303df632f13832167b8f88bde0421c46dbb56db84fae840c8&o=" alt="Hotel Image" class="hotel-image"></a>
+                    <div class="hotel-details">
+                        <a href="stone.htm" class="hotel-name">Stone Hedge Hotel</a>
+                        <div class="hotel-info">
+                            <span>2.8 km from center</span>
+                        </div>
+                        <a href="#" class="hotel-amenities">Stone Hedge Hotel</a>
+                        <div class="hotel-rating">4.2 ⭐</div>
+                        <a href="#" class="hotel-price">Rs 4651/night</a>
+                    </div>
+                </div>
+                <div class="hotel-card">
+                    <a href="Hotels\maple.html"><img src="https://cf.bstatic.com/xdata/images/hotel/square200/473982248.webp?k=055a96c73f3f7cf44de866e7975ed21491de018cf4bd01e397f813437fdae79c&o=" alt="Hotel Image" class="hotel-image"></a>
+                    <div class="hotel-details">
+                        <a href="maple.htm" class="hotel-name">Maple House</a>
+                        <div class="hotel-info">
+                            <span>2 km from center</span>
+                        </div>
+                        <a href="#" class="hotel-amenities">Great Location</a>
+                        <div class="hotel-rating">3 ⭐</div>
+                        <a href="#" class="hotel-price">Rs 2660/night</a>
+                    </div>
+                </div>
+                <div class="hotel-card">
+                    <a href="Hotels\galdan.html"><img src="https://cf.bstatic.com/xdata/images/hotel/square200/462390421.webp?k=dd8c3726402e85e6d18fa80c06ae2ebb2b6b6093d2c0c49ace9a15ee90869260&o=" alt="Hotel Image" class="hotel-image"></a>
+                    <div class="hotel-details">
+                        <a href="galdan.htm" class="hotel-name"> Hotel Galdan Continental</a>
+                        <div class="hotel-info">
+                            <span>1.8 from center</span>
+                        </div>
+                        <a href="#" class="hotel-amenities">Excellent Location</a>
+                        <div class="hotel-rating">4 ⭐</div>
+                        <a href="#" class="hotel-price">Rs 2800/night</a>
+                    </div>
+                </div>
+                <div class="hotel-card">
+                    <a href="Hotels\pal.html"><img src="https://cf.bstatic.com/xdata/images/hotel/square240/394501184.webp?k=68a5593263c419cad7f552fb9eab6c3276c1b5b97c9bd363de40f0cb7a4caa03&o=" alt="Hotel Image" class="hotel-image"></a>
+                    <div class="hotel-details">
+                        <a href="pal.htm" class="hotel-name">Pal Hotel</a>
+                        <div class="hotel-info">
+                            <span>1.4 from center</span>
+                        </div>
+                        <a href="#" class="hotel-amenities">Accomodation with Garden</a>
+                        <div class="hotel-rating">4.5 ⭐</div>
+                        <a href="#" class="hotel-price">Rs 3500/night</a>
+                    </div>
+                </div>
+                <div class="hotel-card">
+                    <a href="Hotels\gawaling.html"><img src="https://cf.bstatic.com/xdata/images/hotel/square240/533760706.webp?k=15081ea1540d4395002bb4dd1e463742a046c5a62bb098300d3c442ae392980b&o=" alt="Hotel Image" class="hotel-image"></a>
+                    <div class="hotel-details">
+                        <a href="gawaling.htm" class="hotel-name">The Gawaling Ladakh</a>
+                        <div class="hotel-info">
+                            <span>1.6km from center</span>
+                        </div>
+                        <a href="#" class="hotel-amenities">Terrece Restaurant</a>
+                        <div class="hotel-rating">3.5 ⭐</div>
+                        <a href="#" class="hotel-price">Rs 2000/night</a>
+                    </div>
+                </div>
+                <div class="hotel-card">
+                    <a href="Hotels\Dunes.html"><img src="https://cf.bstatic.com/xdata/images/hotel/square240/424808176.webp?k=6a06b20cfeef407a535d5b4c35b4d87aefe8903e081754c29c0c7c31be43b34d&o=" alt="Hotel Image" class="hotel-image"></a>
+                    <div class="hotel-details">
+                        <a href="Dunes.htm" class="hotel-name">The Dunes</a>
+                        <div class="hotel-info">
+                            <span>0.6 km from center</span>
+                        </div>
+                        <a href="#" class="hotel-amenities">24 hours front desk service</a>
+                        <div class="hotel-rating">4⭐</div>
+                        <a href="#" class="hotel-price">Rs 2500/night</a>
+                    </div>
+                </div>
+                <div class="hotel-card">
+                    <a href="Hotels\sand.html"><img src="https://cf.bstatic.com/xdata/images/hotel/square240/504950368.webp?k=19a75ae6a6c2b58e9ace0a511344efaca0bf8398abec2e89f0af4d7685f917ce&o=" alt="Hotel Image" class="hotel-image"></a>
+                    <div class="hotel-details">
+                        <a href="sand.htm" class="hotel-name">The Sand Dunes</a>
+                        <div class="hotel-info">
+                            <span>1km from center</span>
+                        </div>
+                        <a href="#" class="hotel-amenities">Restaurant</a>
+                        <div class="hotel-rating">4⭐</div>
+                        <a href="#" class="hotel-price">Rs 2800/night</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
